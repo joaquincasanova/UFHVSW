@@ -1,0 +1,24 @@
+Circuit: * C:\Users\jcasa\Documents\projects\HVSquareWave\ltspice\vco_opamp.asc
+
+WARNING: Less than two connections to node VD.  This node is used by V3.
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Jan 20 10:46:42 2015
+Total elapsed time: 0.398 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 15747
+traniter = 15739
+tranpoints = 5361
+accept = 4013
+rejected = 1348
+matrix size = 20
+fillins = 12
+solver = Normal
+Thread vector: 13.5/9.3[2] 4.3/3.0[2] 2.4/1.8[2] 0.3/12.2[1]  2592/500
+Matrix Compiler1: 1.60 KB object code size  0.8/0.6/[0.2]
+Matrix Compiler2: 2.22 KB object code size  0.5/0.6/[0.4]
+
+
