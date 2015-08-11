@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -9872,21 +9872,6 @@ Beckman, Copal, Piher, Spectrol, Schukat&lt;p&gt;
 <text x="-2.54" y="3.7846" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-4.2164" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="PT-SPIN">
-<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;</description>
-<wire x1="-8.89" y1="-2.54" x2="8.89" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="-2.54" x2="8.89" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="2.54" x2="-8.89" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="2.54" x2="-8.89" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="S" x="-1.27" y="1.27" drill="0.8128" shape="long"/>
-<pad name="E" x="6.35" y="-1.27" drill="0.8128" shape="long"/>
-<pad name="A" x="-6.35" y="-1.27" drill="0.8128" shape="long"/>
-<text x="-3.175" y="3.175" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-1.778" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-9.525" y1="-1.27" x2="-8.89" y2="1.27" layer="21"/>
-<rectangle x1="-10.16" y1="0.381" x2="-9.525" y2="1.27" layer="21"/>
-<rectangle x1="-10.16" y1="-1.27" x2="-9.525" y2="-0.381" layer="21"/>
-</package>
 <package name="B25P">
 <description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;&lt;p&gt;
 Beckman Helitrim 25</description>
@@ -11403,6 +11388,21 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <text x="-1.905" y="-3.4925" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.55" y1="0.6" x2="1.55" y2="0.85" layer="21"/>
 </package>
+<package name="PT-SPIN-2">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;</description>
+<wire x1="-16.51" y1="-2.54" x2="19.05" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="19.05" y1="-2.54" x2="19.05" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="19.05" y1="2.54" x2="-16.51" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-16.51" y1="2.54" x2="-16.51" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="S" x="1.27" y="1.27" drill="0.8128" shape="long"/>
+<pad name="E" x="11.43" y="-1.27" drill="0.8128" shape="long"/>
+<pad name="A" x="-6.35" y="-1.27" drill="0.8128" shape="long"/>
+<text x="-3.175" y="3.175" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-1.778" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-17.145" y1="-1.27" x2="-16.51" y2="1.27" layer="21"/>
+<rectangle x1="-17.78" y1="0.381" x2="-17.145" y2="1.27" layer="21"/>
+<rectangle x1="-17.78" y1="-1.27" x2="-17.145" y2="-0.381" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POT_US-">
@@ -11457,7 +11457,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="PT-SPIN" package="PT-SPIN">
+<device name="PT-SPIN" package="PT-SPIN-2">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="E" pad="E"/>
@@ -11827,7 +11827,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="PTSPIN" package="PT-SPIN">
+<device name="PTSPIN" package="PT-SPIN-2">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="E" pad="E"/>
@@ -12228,12 +12228,12 @@ Based on the following sources :
 <wire x1="-4.445" y1="-2.794" x2="4.445" y2="-2.794" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="2.794" x2="4.445" y2="-2.794" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="2.794" x2="-4.445" y2="2.794" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="-5.08" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-5.08" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-5.08" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="2.54" y="5.08" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="0" y="5.08" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-2.54" y="5.08" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <text x="-4.6736" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.302" y="-0.6096" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="1.778" y1="-4.064" x2="3.3021" y2="-2.7939" layer="21"/>
@@ -12489,7 +12489,7 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="CONTROLHV" library="con-molex" deviceset="KK-156-4" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="U$2" library="microchip" deviceset="MCP4728" device="DIL4" value="MCP4728DIL4"/>
+<part name="U$2" library="microchip" deviceset="MCP4728" device="DIL" value="MCP4728DIL"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>

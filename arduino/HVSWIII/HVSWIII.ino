@@ -9,9 +9,9 @@ For discussion and feedback, please go to http://arduino.cc/forum/index.php/topi
 mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
 
 //enable gate driver positive
-int ENSW1Pin = 8;
+int ENSW1Pin = 6;
 //enable gate driver negative
-int ENSW2Pin = 10;
+int ENSW2Pin = 9;
 
 double LVMax = 500;
 double HVMax = 1000;
@@ -22,6 +22,12 @@ void setup()
 {
   Serial.begin(9600);  // initialize serial interface for print()
   dac.begin();  // initialize i2c interface
+  
+  dac.setVref(0, 0, 0, 0); // set to use external voltage reference (=VDD, 2.7 - 5.5V)
+  int vref = dac.getVref(1); // get current voltage reference setting of channel 1
+  Serial.print("Voltage reference setting of channel 1 = "); // serial print of value
+  Serial.println(vref, DEC); // serial print of value
+
   dac.vdd(5000); // set VDD(mV) of MCP4728 for correct conversion between LSB and Vout
   pinMode(ENSW1Pin,OUTPUT);  
   pinMode(ENSW2Pin,OUTPUT);   
@@ -65,9 +71,15 @@ void experiment(double LV,double HV, double D) {
   
   ///
   //actual run
-  
+  for(int i=0;i++;i<4){
+    int vout = dac.getVout(i); // get current voltage out of channel 1
+    Serial.print("Voltage out of channel "); 
+    Serial.println(i, DEC);
+    Serial.print(" = "); 
+    Serial.println(vout, DEC); // serial print of value
+  }
   Serial.println("EXPERIMENT");
-  delay(6000);
+  delay(60000);
   ///
   reset(); 
   delay(100);                        

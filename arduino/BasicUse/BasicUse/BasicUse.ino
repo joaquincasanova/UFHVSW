@@ -1,5 +1,27 @@
 
+/* 
+Basic use of Arduino library for MicroChip MCP4728 I2C D/A converter
+For discussion and feedback, please go to http://arduino.cc/forum/index.php/topic,51842.0.html
+*/
 
+#include <Wire.h>
+#include "mcp4728.h"
+
+mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
+
+
+void setup()
+{
+  Serial.begin(9600);  // initialize serial interface for print()
+  dac.begin();  // initialize i2c interface
+  
+  dac.setVref(0, 0, 0, 0); // set to use external voltage reference (=VDD, 2.7 - 5.5V)
+  int vref = dac.getVref(1); // get current voltage reference setting of channel 1
+  Serial.print("Voltage reference setting of channel 1 = "); // serial print of value
+  Serial.println(vref, DEC); // serial print of value
+
+  dac.vdd(5000); // set VDD(mV) of MCP4728 for correct conversion between LSB and Vout
+}
 void loop()
 {
 
