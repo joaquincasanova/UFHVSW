@@ -12451,6 +12451,121 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="texas">
+<description>&lt;b&gt;Texas Instruments Devices&lt;/b&gt;&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SOIC8">
+<description>&lt;b&gt;Small Outline IC&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ISO1540">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.397" y1="4.572" x2="-1.397" y2="-6.985" width="0.0762" layer="94"/>
+<wire x1="1.524" y1="4.572" x2="1.524" y2="-6.985" width="0.0762" layer="94"/>
+<text x="-10.16" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0.508" y="-6.35" size="0.7112" layer="94" rot="R90">GALVANIC ISOLATION</text>
+<pin name="SDA1" x="-12.7" y="0" length="short" direction="in"/>
+<pin name="SCL1" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="SDA2" x="12.7" y="0" length="short" direction="in" rot="R180"/>
+<pin name="SCL2" x="12.7" y="-2.54" length="short" direction="in" rot="R180"/>
+<pin name="GND1" x="-12.7" y="-5.08" length="short" direction="in"/>
+<pin name="GND2" x="12.7" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="VCC1" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="VCC2" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ISO1540" prefix="IC">
+<description>&lt;b&gt;ISOLATED CAN TRANSCEIVER&lt;/b&gt;&lt;p&gt;
+Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
+<gates>
+<gate name="G$1" symbol="ISO1540" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL08">
+<connects>
+<connect gate="G$1" pin="GND1" pad="4"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="SCL1" pad="3"/>
+<connect gate="G$1" pin="SCL2" pad="6"/>
+<connect gate="G$1" pin="SDA1" pad="2"/>
+<connect gate="G$1" pin="SDA2" pad="7"/>
+<connect gate="G$1" pin="VCC1" pad="1"/>
+<connect gate="G$1" pin="VCC2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="GND1" pad="4"/>
+<connect gate="G$1" pin="GND2" pad="5"/>
+<connect gate="G$1" pin="SCL1" pad="3"/>
+<connect gate="G$1" pin="SCL2" pad="6"/>
+<connect gate="G$1" pin="SDA1" pad="2"/>
+<connect gate="G$1" pin="SDA2" pad="7"/>
+<connect gate="G$1" pin="VCC1" pad="1"/>
+<connect gate="G$1" pin="VCC2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12462,8 +12577,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </classes>
 <parts>
 <part name="PCB1" library="E14_Arduino_published" deviceset="ARDUINO_MICRO" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0207/12" value="100"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0207/12" value="100"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0207/12" value="100"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="POWERINTERFACE" library="con-molex" deviceset="KK-156-3" device=""/>
@@ -12492,12 +12605,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="U$2" library="microchip" deviceset="MCP4728" device="DIL" value="MCP4728DIL"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/12" value="1k"/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="R5" library="rcl" deviceset="R-US_" device="0207/12" value="1k"/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="maxim" deviceset="MAX9650" device="DIL" value="MAX9650DIL"/>
 <part name="P+7" library="supply2" deviceset="+12V" device=""/>
 <part name="R6" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
@@ -12521,6 +12628,11 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="OK1" library="optocoupler" deviceset="PS2501" device="&quot;"/>
+<part name="IC1" library="texas" deviceset="ISO1540" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0207/12" value="1.5k"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="0207/12" value="1.5k"/>
 </parts>
 <sheets>
 <sheet>
@@ -12529,8 +12641,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </plain>
 <instances>
 <instance part="PCB1" gate="G$1" x="27.94" y="81.28"/>
-<instance part="R1" gate="G$1" x="10.16" y="45.72" rot="R180"/>
-<instance part="R2" gate="G$1" x="10.16" y="2.54" rot="R180"/>
 <instance part="R3" gate="G$1" x="10.16" y="-38.1" rot="R180"/>
 <instance part="P+5" gate="VCC" x="88.9" y="38.1"/>
 <instance part="POWERINTERFACE" gate="-1" x="96.52" y="38.1"/>
@@ -12566,12 +12676,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="U$2" gate="G$1" x="121.92" y="83.82"/>
 <instance part="P+1" gate="VCC" x="104.14" y="106.68"/>
 <instance part="GND5" gate="1" x="139.7" y="106.68" rot="R180"/>
-<instance part="P+3" gate="VCC" x="43.18" y="45.72" rot="R270"/>
-<instance part="R4" gate="G$1" x="45.72" y="40.64"/>
-<instance part="GND6" gate="1" x="53.34" y="40.64" rot="R90"/>
-<instance part="P+4" gate="VCC" x="43.18" y="2.54" rot="R270"/>
-<instance part="R5" gate="G$1" x="45.72" y="-2.54"/>
-<instance part="GND7" gate="1" x="53.34" y="-2.54" rot="R90"/>
 <instance part="U$4" gate="G$2" x="170.18" y="68.58"/>
 <instance part="P+7" gate="+12V" x="167.64" y="78.74"/>
 <instance part="R6" gate="G$1" x="228.6" y="88.9" rot="R90"/>
@@ -12596,26 +12700,15 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <instance part="GND8" gate="1" x="99.06" y="73.66" rot="R270"/>
 <instance part="OK1" gate="A" x="27.94" y="-76.2"/>
 <instance part="OK1" gate="B" x="27.94" y="-40.64"/>
-<instance part="OK1" gate="C" x="27.94" y="0"/>
-<instance part="OK1" gate="D" x="27.94" y="43.18"/>
+<instance part="IC1" gate="G$1" x="27.94" y="27.94"/>
+<instance part="GND23" gate="1" x="43.18" y="22.86" rot="R90"/>
+<instance part="P+6" gate="VCC" x="40.64" y="40.64"/>
+<instance part="R1" gate="G$1" x="48.26" y="33.02" rot="R90"/>
+<instance part="R2" gate="G$1" x="55.88" y="30.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="D" pin="C"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="2.54" x2="15.24" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="C" pin="C"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -12670,14 +12763,6 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
@@ -12717,6 +12802,10 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="OK1" gate="B" pin="EMI"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND2"/>
+<pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -12774,14 +12863,14 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="40.64" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="D" pin="COL"/>
-</segment>
-<segment>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="40.64" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="C" pin="COL"/>
+<pinref part="IC1" gate="G$1" pin="VCC2"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="40.64" y1="38.1" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="38.1" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -12792,24 +12881,27 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 </net>
 <net name="AGND" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="45.72" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="25.4" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-38.1" x2="5.08" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GND."/>
-<wire x1="43.18" y1="63.5" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="63.5" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="10.16" y1="22.86" x2="15.24" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="GND1"/>
 </segment>
 </net>
 <net name="A+5" class="0">
 <segment>
 <pinref part="PCB1" gate="G$1" pin="+5V"/>
 <wire x1="38.1" y1="63.5" x2="38.1" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="10.16" y1="30.48" x2="15.24" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VCC1"/>
 </segment>
 </net>
 <net name="D10" class="0">
@@ -12824,8 +12916,8 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="35.56" y1="96.52" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="17.78" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="D" pin="A"/>
+<wire x1="15.24" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="SDA1"/>
 </segment>
 </net>
 <net name="PWM9" class="0">
@@ -12878,30 +12970,30 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <wire x1="33.02" y1="96.52" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="17.78" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="C" pin="A"/>
+<wire x1="15.24" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="SCL1"/>
 </segment>
 </net>
 <net name="SDA_OUT" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="D" pin="EMI"/>
-</segment>
-<segment>
 <wire x1="104.14" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="SDA"/>
+</segment>
+<segment>
+<wire x1="48.26" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="SDA2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SCL_OUT" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="-2.54" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="OK1" gate="C" pin="EMI"/>
-</segment>
-<segment>
 <wire x1="104.14" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="SCL"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="SCL2"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
