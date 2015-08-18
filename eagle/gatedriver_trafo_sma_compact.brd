@@ -2856,7 +2856,7 @@ design rules under a new name.</description>
 <element name="C5" library="resistor" package="C050-055X075" value="" x="68.326" y="73.914" rot="R90"/>
 <element name="R4" library="rcl" package="0207/12" value="1M" x="104.14" y="87.884" rot="R90"/>
 <element name="R7" library="rcl" package="0207/12" value="1M" x="104.14" y="64.77" rot="R90"/>
-<element name="C2" library="resistor" package="C050-055X075" value="" x="68.834" y="35.306" rot="R90"/>
+<element name="C2" library="resistor" package="C050-055X075" value="" x="71.374" y="35.56" rot="R90"/>
 <element name="U$2" library="transistor-fet" package="TO92-" value="VN0550" x="90.424" y="47.498" rot="R90"/>
 <element name="U$6" library="transistor-fet" package="TO92-" value="VN0550" x="90.424" y="29.718" rot="R90"/>
 <element name="U$7" library="trafo" package="DIL06" value="DA-2320" x="51.054" y="26.924"/>
@@ -2867,8 +2867,8 @@ design rules under a new name.</description>
 <element name="D4" library="diode" package="C1702-15" value="P6KEXXA" x="120.396" y="26.924" rot="R270"/>
 <element name="U$4" library="transistor-fet" package="TO92-" value="VP0550" x="90.424" y="83.566" rot="R270"/>
 <element name="U$5" library="transistor-fet" package="TO92-" value="VP0550" x="90.424" y="63.754" rot="R270"/>
-<element name="LV1" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="65.532" y="8.89">
-<attribute name="TP_SIGNAL_NAME" value="" x="65.532" y="8.89" size="1.778" layer="27" display="off"/>
+<element name="LV1" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="65.786" y="9.144">
+<attribute name="TP_SIGNAL_NAME" value="" x="65.786" y="9.144" size="1.778" layer="27" display="off"/>
 </element>
 <element name="HV1" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="65.532" y="102.362" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="65.532" y="102.362" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3012,8 +3012,8 @@ design rules under a new name.</description>
 <contactref element="U$7" pad="2"/>
 <wire x1="51.054" y1="23.114" x2="51.054" y2="25.146" width="1.6764" layer="16"/>
 <wire x1="51.054" y1="25.146" x2="53.086" y2="27.178" width="1.6764" layer="16"/>
-<wire x1="53.086" y1="27.178" x2="63.246" y2="27.178" width="1.6764" layer="16"/>
-<wire x1="63.246" y1="27.178" x2="68.834" y2="32.766" width="1.6764" layer="16"/>
+<wire x1="53.086" y1="27.178" x2="65.532" y2="27.178" width="1.6764" layer="16"/>
+<wire x1="65.532" y1="27.178" x2="71.374" y2="33.02" width="1.6764" layer="16"/>
 </signal>
 <signal name="N$23">
 <contactref element="U$7" pad="3"/>
@@ -3023,8 +3023,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$25">
 <contactref element="C2" pad="2"/>
-<wire x1="76.2" y1="47.498" x2="68.834" y2="40.132" width="1.6764" layer="16"/>
-<wire x1="68.834" y1="40.132" x2="68.834" y2="37.846" width="1.6764" layer="16"/>
+<wire x1="76.2" y1="47.498" x2="71.374" y2="42.672" width="1.6764" layer="16"/>
+<wire x1="71.374" y1="42.672" x2="71.374" y2="38.1" width="1.6764" layer="16"/>
 <contactref element="D6" pad="C"/>
 <contactref element="U$2" pad="2"/>
 <wire x1="76.2" y1="47.498" x2="81.788" y2="47.498" width="1.6764" layer="16"/>
@@ -3149,7 +3149,7 @@ design rules under a new name.</description>
 <signal name="N$10">
 <contactref element="LV1" pad="TP"/>
 <contactref element="D8" pad="C"/>
-<wire x1="65.532" y1="8.89" x2="80.264" y2="9.144" width="1.6764" layer="16"/>
+<wire x1="65.786" y1="9.144" x2="80.264" y2="9.144" width="1.6764" layer="16"/>
 </signal>
 <signal name="N$20">
 <contactref element="D6" pad="A"/>

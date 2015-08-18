@@ -37,7 +37,7 @@ void loop()
   Serial.print("Device ID  = "); // serial print of value
   Serial.println(id, DEC); // serial print of value
   
-  dac.voutWrite(100, 500, 1000, 2000); // write to input register of DAC. Value(mV) (V < VDD)
+  dac.voutWrite(4000, 2000, 1000, 500); // write to input register of DAC. Value(mV) (V < VDD)
   int vout = dac.getVout(1); // get current voltage out of channel 1
   Serial.print("Voltage out of channel 1 = "); 
   Serial.println(vout, DEC); // serial print of value
