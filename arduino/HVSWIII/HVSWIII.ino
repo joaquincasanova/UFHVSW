@@ -14,7 +14,7 @@ int ENSW1Pin = 9;
 //enable gate driver negative
 int ENSW2Pin = 6;
 
-double LVMax = 500;
+double LVMax = 1000;
 double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
@@ -45,7 +45,7 @@ void reset()  {
 void experiment(double LV, double HV, double D) {
 
   int PWMValue = 0;
-  PWMValue = ((int) (DMax - D) / (DMax) * 5000); //it's opposite
+  PWMValue = ((int) (D) / (DMax) * 5000); 
   int HVValue = 0;
   HVValue = abs((int) HV / HVMax * 5000);
   int LVValue = 0;
@@ -70,7 +70,7 @@ void experiment(double LV, double HV, double D) {
   Serial.println("Voltage assignation");
   if (HV >= 0) {
     Serial.println("Positive");
-    dac.voutWrite(PWMValue, 0, LVValue, HVValue);
+    dac.voutWrite(PWMValue,  0 ,LVValue, HVValue);
     for (i = 0; i < 4; i++) {
       int vout = dac.getVout(i); // get current voltage out of channel 1
       Serial.print("Voltage out of channel ");
@@ -80,7 +80,7 @@ void experiment(double LV, double HV, double D) {
     }
   } else {
     Serial.println("Negative");
-    dac.voutWrite(PWMValue, HVValue, LVValue,  0);   
+    dac.voutWrite(PWMValue, HVValue,  LVValue, 0);   
     for (i = 0; i < 4; i++) {
       int vout = dac.getVout(i); // get current voltage out of channel 1
       Serial.print("Voltage out of channel ");
@@ -110,13 +110,13 @@ void loop() {
   Serial.print("Device ID  = "); // serial print of value
   Serial.println(id, DEC); // serial print of value
 
-  double DV = 100;
+  double DV = 200;
   double CV = 0;
   double D = 50;
-  double HV = DV + CV;
+  double HV = 0;//DV + CV;
   Serial.println("HV:");
   Serial.println(HV);
-  double LV = -HV * D / (100 - D) + CV ;
+  double LV = -200;//DV * D / (100 - D) + CV ;
   Serial.println("LV:");
   Serial.println(LV);
   delay(100);
@@ -130,22 +130,22 @@ void loop() {
     experiment(LV, HV, D);
     reset();
   }
-  DV = -100;
-  HV = DV + CV;
-  Serial.println("HV:");
-  Serial.println(HV);
-  LV = -HV * D / (100 - D) + CV ;
-  Serial.println("LV:");
-  Serial.println(LV);
-  delay(10000);
-  if (abs(HV - LV) > 1000) {
-    Serial.println("Voltage out of range");
-    delay(10000);
-    reset();
-  } else {
-    reset();
-    Serial.println("Run:");
-    experiment(LV, HV, D);
-    reset();
-  }
+//  DV = -100;
+//  HV = DV + CV;
+//  Serial.println("HV:");
+//  Serial.println(HV);
+//  LV = -HV * D / (100 - D) + CV ;
+//  Serial.println("LV:");
+//  Serial.println(LV);
+//  delay(10000);
+//  if (abs(HV - LV) > 1000) {
+//    Serial.println("Voltage out of range");
+//    delay(10000);
+//    reset();
+//  } else {
+//    reset();
+//    Serial.println("Run:");
+//    experiment(LV, HV, D);
+//    reset();
+//  }
 }
