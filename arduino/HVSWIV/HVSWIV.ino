@@ -9,12 +9,10 @@ For discussion and feedback, please go to http://arduino.cc/forum/index.php/topi
 
 mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
 
-//enable gate driver positive
+//enable gate driver
 int ENSW1Pin = 9;
-//enable gate driver negative
-int ENSW2Pin = 6;
 
-double LVMax = 500;
+double LVMax = 1000;
 double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
@@ -31,15 +29,13 @@ void setup()
   Serial.print("Voltage reference setting of channel 1 = "); // serial print of value
   Serial.println(vref, DEC); // serial print of value
   pinMode(ENSW1Pin, OUTPUT);
-  pinMode(ENSW2Pin, OUTPUT);
 }
 
 void reset()  {
   //set everything to zero
   Serial.println("RESET");
   dac.voutWrite(0, 0, 0, 0);
-  digitalWrite(ENSW1Pin, LOW);
-  digitalWrite(ENSW2Pin, LOW);
+  digitalWrite(ENSW1Pin, LOW); 
 }
 
 void experiment(double LV, double HV, double D) {
@@ -58,28 +54,22 @@ void experiment(double LV, double HV, double D) {
   delay(100);
   //positive or negative? enable correct gate driver
 
-  if (HV >= 0) {
-    digitalWrite(ENSW1Pin, HIGH);
-    digitalWrite(ENSW2Pin, LOW);
-  } else {
-    digitalWrite(ENSW1Pin, LOW);
-    digitalWrite(ENSW2Pin, HIGH);
-  };
+  digitalWrite(ENSW1Pin, HIGH);
 
   delay(100);
   //Serial.println("Voltage assignation");
   if (HV >= 0) {
     Serial.println("Positive");
-    dac.voutWrite(PWMValue,  0 ,LVValue, HVValue);
+    dac.voutWrite(PWMValue, LVValue, 0 ,HVValue);
   } else {
     Serial.println("Negative");
-    dac.voutWrite(PWMValue, HVValue,  LVValue, 0);   
+    dac.voutWrite(PWMValue, HVValue, 0, LVValue);   
   }
 
   ///
   //actual run
   Serial.println("EXPERIMENT");
-  delay(60000);
+  delay(30000);
   ///
   reset();
   delay(100);
@@ -111,7 +101,7 @@ void loop() {
 
   double DV = 200;
   double CV = 0;
-  double D = 50;
+  double D = 33;
   double HV = DV + CV;
   Serial.println("HV:");
   Serial.println(HV);
