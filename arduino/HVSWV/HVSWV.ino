@@ -102,14 +102,14 @@ void loop() {
   double DV = 600;
   double CV = 0;
   double D = 33;
-  double HV = DV + CV;
+  double HV = DV + DV*D/(100-D);
   Serial.println("HV:");
   Serial.println(HV);
-  double LV = -DV * D / (100 - D) + CV ;
+  double LV = DV * D/(100 - D) - CV ;
   Serial.println("LV:");
   Serial.println(LV);
   delay(100);
-  if (abs(HV - LV) > 1000) {
+  if (HV > 1000 || LV > 1000)  {
     Serial.println("Voltage out of range");
     delay(10000);
     reset();
