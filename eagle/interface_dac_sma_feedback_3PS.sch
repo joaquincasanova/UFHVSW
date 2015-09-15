@@ -14946,6 +14946,9 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="C2" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="OK2" library="optocoupler" deviceset="H11F1" device=""/>
+<part name="T2" library="transistor-npn" deviceset="TIP122*" device="V" value="TIP122V"/>
+<part name="P+4" library="supply2" deviceset="+12V" device=""/>
+<part name="R3" library="resistor" deviceset="R-US_" device="0207/12" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14994,13 +14997,13 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="P+6" gate="VCC" x="40.64" y="40.64"/>
 <instance part="R1" gate="G$1" x="48.26" y="33.02" rot="R90"/>
 <instance part="R2" gate="G$1" x="55.88" y="30.48" rot="R90"/>
-<instance part="T1" gate="G$1" x="195.58" y="68.58"/>
-<instance part="P+3" gate="+12V" x="200.66" y="78.74"/>
+<instance part="T1" gate="G$1" x="198.12" y="68.58"/>
+<instance part="P+3" gate="+12V" x="203.2" y="78.74"/>
 <instance part="T3" gate="G$1" x="203.2" y="-27.94"/>
 <instance part="P+12" gate="+12V" x="208.28" y="-22.86"/>
 <instance part="R4" gate="G$1" x="187.96" y="68.58" rot="R180"/>
 <instance part="R14" gate="G$1" x="185.42" y="-27.94" rot="R180"/>
-<instance part="CONTROLHV" gate="-1" x="205.74" y="60.96"/>
+<instance part="CONTROLHV" gate="-1" x="208.28" y="60.96"/>
 <instance part="CONTROLHV" gate="-2" x="208.28" y="22.86"/>
 <instance part="CONTROLHV" gate="-3" x="218.44" y="-35.56"/>
 <instance part="FDBACKHV" gate="-1" x="162.56" y="53.34"/>
@@ -15014,6 +15017,9 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="C2" gate="G$1" x="238.76" y="91.44"/>
 <instance part="GND11" gate="1" x="238.76" y="81.28"/>
 <instance part="OK2" gate="G$1" x="27.94" y="-76.2"/>
+<instance part="T2" gate="G$1" x="195.58" y="43.18"/>
+<instance part="P+4" gate="+12V" x="200.66" y="50.8"/>
+<instance part="R3" gate="G$1" x="187.96" y="43.18" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15298,11 +15304,16 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
 <pinref part="P+3" gate="+12V" pin="+12V"/>
-<wire x1="200.66" y1="76.2" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="76.2" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="T3" gate="G$1" pin="C"/>
 <pinref part="P+12" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="T2" gate="G$1" pin="C"/>
+<pinref part="P+4" gate="+12V" pin="+12V"/>
+<wire x1="200.66" y1="48.26" x2="200.66" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -15379,6 +15390,8 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <pinref part="U$4" gate="G$2" pin="OUT"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="68.58" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -15391,7 +15404,12 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="CONTROLHV" gate="-1" pin="S"/>
-<wire x1="200.66" y1="60.96" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="60.96" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="205.74" y1="60.96" x2="205.74" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="T2" gate="G$1" pin="E"/>
+<wire x1="205.74" y1="35.56" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -15408,6 +15426,13 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="T1" gate="G$1" pin="B"/>
 <pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="T2" gate="G$1" pin="B"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

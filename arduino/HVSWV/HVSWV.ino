@@ -99,7 +99,7 @@ void loop() {
 //  }
 //  double CV=Serial.parseFloat();  //Read the data the user has input
 
-  double DV = 600;
+  double DV = 300;
   double CV = 0;
   double D = 33;
   double HV = DV + DV*D/(100-D);

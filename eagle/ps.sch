@@ -11400,9 +11400,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply2" deviceset="+12V" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="POWERGD1" library="con-molex" deviceset="KK-156-2" device=""/>
-<part name="P+9" library="supply2" deviceset="+12V" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="varistor" deviceset="VARISTOR" device="-7,5"/>
 <part name="U$2" library="meanwell" deviceset="IRM-60-12" device=""/>
 </parts>
@@ -11412,7 +11409,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="35.56" y="71.12"/>
-<instance part="P+1" gate="VCC" x="-2.54" y="81.28" rot="R90"/>
+<instance part="P+1" gate="VCC" x="-10.16" y="83.82" rot="R90"/>
 <instance part="P+2" gate="+12V" x="-2.54" y="30.48" rot="R90"/>
 <instance part="GND1" gate="1" x="-2.54" y="60.96" rot="R270"/>
 <instance part="GND2" gate="1" x="-2.54" y="10.16" rot="R270"/>
@@ -11421,11 +11418,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="POWERIFACE" gate="-1" x="-45.72" y="66.04"/>
 <instance part="POWERIFACE" gate="-2" x="-45.72" y="63.5"/>
 <instance part="POWERIFACE" gate="-3" x="-45.72" y="60.96"/>
-<instance part="POWERGD" gate="-1" x="-43.18" y="43.18"/>
+<instance part="POWERGD" gate="-1" x="-12.7" y="35.56" rot="R90"/>
 <instance part="POWERGD" gate="-2" x="-43.18" y="38.1"/>
 <instance part="P+3" gate="VCC" x="-50.8" y="63.5" rot="R90"/>
 <instance part="P+4" gate="+12V" x="-50.8" y="66.04" rot="R90"/>
-<instance part="P+5" gate="+12V" x="-48.26" y="43.18" rot="R90"/>
+<instance part="P+5" gate="+12V" x="-12.7" y="22.86" rot="R180"/>
 <instance part="GND3" gate="1" x="-50.8" y="60.96" rot="R270"/>
 <instance part="GND4" gate="1" x="-48.26" y="38.1" rot="R270"/>
 <instance part="C1" gate="G$1" x="-93.98" y="99.06"/>
@@ -11436,10 +11433,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND7" gate="1" x="-73.66" y="91.44"/>
 <instance part="P+6" gate="+12V" x="-88.9" y="104.14"/>
 <instance part="P+8" gate="VCC" x="-73.66" y="104.14"/>
-<instance part="POWERGD1" gate="-1" x="-83.82" y="43.18"/>
-<instance part="POWERGD1" gate="-2" x="-83.82" y="38.1"/>
-<instance part="P+9" gate="+12V" x="-88.9" y="43.18" rot="R90"/>
-<instance part="GND8" gate="1" x="-88.9" y="38.1" rot="R270"/>
 <instance part="R1" gate="G$1" x="76.2" y="48.26" rot="R180"/>
 <instance part="U$2" gate="IRM-60-12" x="40.64" y="20.32"/>
 </instances>
@@ -11447,12 +11440,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </busses>
 <nets>
 <net name="VCC" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="+V"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="-2.54" y1="81.28" x2="0" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="81.28" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="POWERIFACE" gate="-2" pin="S"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
@@ -11465,13 +11452,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-73.66" y1="101.6" x2="-78.74" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-73.66" y="101.6"/>
 </segment>
-</net>
-<net name="+15V" class="0">
 <segment>
-<pinref part="P+2" gate="+12V" pin="+12V"/>
-<pinref part="U$2" gate="IRM-60-12" pin="+V"/>
-<wire x1="2.54" y1="30.48" x2="0" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="+V"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="-7.62" y1="83.82" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="+12V" class="0">
 <segment>
 <pinref part="POWERIFACE" gate="-1" pin="S"/>
 <pinref part="P+4" gate="+12V" pin="+12V"/>
@@ -11479,7 +11466,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="POWERGD" gate="-1" pin="S"/>
 <pinref part="P+5" gate="+12V" pin="+12V"/>
-<junction x="-45.72" y="43.18"/>
+<wire x1="-12.7" y1="33.02" x2="-12.7" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -11490,8 +11477,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="-88.9" y="101.6"/>
 </segment>
 <segment>
-<pinref part="POWERGD1" gate="-1" pin="S"/>
-<pinref part="P+9" gate="+12V" pin="+12V"/>
+<pinref part="U$2" gate="IRM-60-12" pin="+V"/>
+<pinref part="P+2" gate="+12V" pin="+12V"/>
+<wire x1="0" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11528,10 +11516,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-73.66" y1="93.98" x2="-71.12" y2="93.98" width="0.1524" layer="91"/>
 <junction x="-73.66" y="93.98"/>
-</segment>
-<segment>
-<pinref part="POWERGD1" gate="-2" pin="S"/>
-<pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">

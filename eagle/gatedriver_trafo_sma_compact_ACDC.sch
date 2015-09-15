@@ -11370,16 +11370,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+11" library="supply2" deviceset="+12V" device=""/>
 <part name="U$1" library="trafo" deviceset="DA-2320" device=""/>
 <part name="C5" library="resistor" deviceset="C-US" device="050-055X075"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/12" value="1M"/>
-<part name="R7" library="rcl" deviceset="R-US_" device="0207/12" value="1M"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0207/12" value="10M"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="0207/12" value="10M"/>
 <part name="C2" library="resistor" deviceset="C-US" device="050-055X075"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="transistor-fet" deviceset="VN0550" device=""/>
 <part name="U$6" library="transistor-fet" deviceset="VN0550" device=""/>
 <part name="U$7" library="trafo" deviceset="DA-2320" device=""/>
 <part name="C6" library="resistor" deviceset="C-US" device="050-055X075"/>
-<part name="R10" library="rcl" deviceset="R-US_" device="0207/12" value="1M"/>
-<part name="R11" library="rcl" deviceset="R-US_" device="0207/12" value="1M"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="0207/12" value="10M"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="0207/12" value="10M"/>
 <part name="D1" library="diode" deviceset="P6KEXXA" device=""/>
 <part name="D4" library="diode" deviceset="P6KEXXA" device=""/>
 <part name="U$4" library="transistor-fet" deviceset="VP0550" device=""/>
