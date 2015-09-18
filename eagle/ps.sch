@@ -11402,6 +11402,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="R1" library="varistor" deviceset="VARISTOR" device="-7,5"/>
 <part name="U$2" library="meanwell" deviceset="IRM-60-12" device=""/>
+<part name="POWERGD1" library="con-molex" deviceset="KK-156-2" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="P+7" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11435,6 +11438,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="P+8" gate="VCC" x="-73.66" y="104.14"/>
 <instance part="R1" gate="G$1" x="76.2" y="48.26" rot="R180"/>
 <instance part="U$2" gate="IRM-60-12" x="40.64" y="20.32"/>
+<instance part="POWERGD1" gate="-1" x="-48.26" y="86.36" rot="R180"/>
+<instance part="POWERGD1" gate="-2" x="-50.8" y="91.44" rot="R180"/>
+<instance part="GND5" gate="1" x="-45.72" y="91.44" rot="R90"/>
+<instance part="P+7" gate="VCC" x="-43.18" y="86.36" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11456,6 +11463,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="U$1" gate="G$1" pin="+V"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="-7.62" y1="83.82" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="POWERGD1" gate="-1" pin="S"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -11487,6 +11498,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="U$1" gate="G$1" pin="-V"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-2.54" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="0" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -11516,6 +11528,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-73.66" y1="93.98" x2="-71.12" y2="93.98" width="0.1524" layer="91"/>
 <junction x="-73.66" y="93.98"/>
+</segment>
+<segment>
+<pinref part="POWERGD1" gate="-2" pin="S"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">

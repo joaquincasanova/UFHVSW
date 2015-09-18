@@ -9858,12 +9858,20 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R2" library="pot" deviceset="TRIM_US-" device="B90P"/>
 <part name="R3" library="pot" deviceset="TRIM_US-" device="B90P"/>
-<part name="C5" library="rcl" deviceset="C-US" device="225-108X268" value="1u"/>
-<part name="C6" library="rcl" deviceset="C-US" device="225-108X268" value="1u"/>
+<part name="C5" library="rcl" deviceset="C-US" device="275-205X316" value="1u"/>
+<part name="C6" library="rcl" deviceset="C-US" device="275-205X316" value="1u"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="LV+" library="testpad" deviceset="TP" device="PAD1-20Y"/>
 <part name="U$2" library="dc-dc-converter" deviceset="EMCO-F10" device="4PIN"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="C1" library="rcl" deviceset="C-US" device="075-042X103" value="1n"/>
+<part name="C2" library="rcl" deviceset="C-US" device="075-042X103" value="10p"/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="C4" library="rcl" deviceset="C-US" device="075-042X103" value="1n"/>
+<part name="C7" library="rcl" deviceset="C-US" device="075-042X103" value="10p"/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9901,6 +9909,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="LV+" gate="G$1" x="104.14" y="-10.16" rot="R270"/>
 <instance part="U$2" gate="G$1" x="48.26" y="-12.7"/>
 <instance part="GND4" gate="1" x="63.5" y="66.04" rot="R180"/>
+<instance part="C1" gate="G$1" x="71.12" y="50.8"/>
+<instance part="C2" gate="G$1" x="76.2" y="50.8"/>
+<instance part="GND8" gate="1" x="71.12" y="43.18"/>
+<instance part="GND10" gate="1" x="76.2" y="43.18"/>
+<instance part="C4" gate="G$1" x="81.28" y="-7.62" rot="R180"/>
+<instance part="C7" gate="G$1" x="73.66" y="-7.62" rot="R180"/>
+<instance part="GND11" gate="1" x="81.28" y="0" rot="R180"/>
+<instance part="GND13" gate="1" x="73.66" y="0" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9962,6 +9978,22 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="63.5" y1="63.5" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -9977,6 +10009,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <junction x="63.5" y="53.34"/>
 <wire x1="63.5" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -9992,6 +10026,9 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <junction x="101.6" y="-10.16"/>
 <wire x1="101.6" y1="-10.16" x2="88.9" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="+VOUT"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<junction x="81.28" y="-10.16"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">

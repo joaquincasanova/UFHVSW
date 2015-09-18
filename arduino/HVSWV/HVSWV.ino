@@ -12,7 +12,7 @@ mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
 //enable gate driver
 int ENSW1Pin = 9;
 
-double LVMax = 1000;
+double LVMax = 400;
 double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
@@ -58,13 +58,8 @@ void experiment(double LV, double HV, double D) {
 
   delay(100);
   //Serial.println("Voltage assignation");
-  if (HV >= 0) {
-    Serial.println("Positive");
-    dac.voutWrite(PWMValue, LVValue, 0 ,HVValue);
-  } else {
-    Serial.println("Negative");
-    dac.voutWrite(PWMValue, HVValue, 0, LVValue);   
-  }
+  Serial.println("Positive");
+  dac.voutWrite(PWMValue, LVValue, 0 ,HVValue);
 
   ///
   //actual run
@@ -99,7 +94,7 @@ void loop() {
 //  }
 //  double CV=Serial.parseFloat();  //Read the data the user has input
 
-  double DV = 300;
+  double DV = 100;
   double CV = 0;
   double D = 33;
   double HV = DV + DV*D/(100-D);
