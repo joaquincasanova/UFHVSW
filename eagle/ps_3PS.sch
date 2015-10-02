@@ -170,6 +170,12 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="-5V">
+<wire x1="-1.27" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="-5V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="P+">
@@ -189,6 +195,19 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-5V" prefix="P-">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="-5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -393,24 +412,6 @@ Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description
 <description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="KK-156-3">
-<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
-<wire x1="5.79" y1="4.95" x2="3.99" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="3.99" y1="4.95" x2="-3.965" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-3.965" y1="4.95" x2="-5.765" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-5.765" y1="4.95" x2="-5.765" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="-5.765" y1="-4.825" x2="5.79" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="5.79" y1="-4.825" x2="5.79" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-3.965" y1="2.525" x2="3.99" y2="2.525" width="0.2032" layer="21"/>
-<wire x1="3.99" y1="2.525" x2="3.99" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-3.965" y1="2.525" x2="-3.965" y2="4.95" width="0.2032" layer="21"/>
-<pad name="1" x="-3.96" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="3" x="3.96" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<text x="-6.46" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="7.73" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 <package name="KK-156-2">
 <description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
@@ -428,6 +429,25 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <text x="-4.48" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="5.75" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="KK-156-4">
+<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
+<wire x1="7.77" y1="4.95" x2="5.97" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="5.97" y1="4.95" x2="-5.945" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-5.945" y1="4.95" x2="-7.745" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-7.745" y1="4.95" x2="-7.745" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="-7.745" y1="-4.825" x2="7.77" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="7.77" y1="-4.825" x2="7.77" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-5.945" y1="2.525" x2="5.97" y2="2.525" width="0.2032" layer="21"/>
+<wire x1="5.97" y1="2.525" x2="5.97" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-5.945" y1="2.525" x2="-5.945" y2="4.95" width="0.2032" layer="21"/>
+<pad name="1" x="-5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="3" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="4" x="5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<text x="-8.44" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="9.71" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -443,32 +463,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="KK-156-3" prefix="X" uservalue="yes">
-<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="KK-156-3">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="KK-156-2" prefix="X" uservalue="yes">
 <description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
@@ -481,6 +475,34 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KK-156-4" prefix="X" uservalue="yes">
+<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="M" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="KK-156-4">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -11385,7 +11407,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="con-faston" deviceset="PIN2" device="F061.100"/>
 <part name="J2" library="con-faston" deviceset="PIN2" device="F061.100"/>
-<part name="POWERIFACE" library="con-molex" deviceset="KK-156-3" device=""/>
 <part name="POWERGD" library="con-molex" deviceset="KK-156-2" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply2" deviceset="+12V" device=""/>
@@ -11405,109 +11426,122 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="POWERGD1" library="con-molex" deviceset="KK-156-2" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
+<part name="U$3" library="meanwell" deviceset="IRM-05-05" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="P-1" library="supply1" deviceset="-5V" device=""/>
+<part name="POWERIFACE" library="con-molex" deviceset="KK-156-4" device=""/>
+<part name="P-2" library="supply1" deviceset="-5V" device=""/>
+<part name="P-3" library="supply1" deviceset="-5V" device=""/>
+<part name="C5" library="rcl" deviceset="C-US" device="050-050X075"/>
+<part name="C6" library="rcl" deviceset="CPOL-US" device="E5-13"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="35.56" y="71.12"/>
-<instance part="P+1" gate="VCC" x="-10.16" y="83.82" rot="R90"/>
-<instance part="P+2" gate="+12V" x="-2.54" y="30.48" rot="R90"/>
-<instance part="GND1" gate="1" x="-2.54" y="60.96" rot="R270"/>
-<instance part="GND2" gate="1" x="-2.54" y="10.16" rot="R270"/>
-<instance part="J1" gate="-1" x="91.44" y="55.88"/>
-<instance part="J2" gate="-1" x="68.58" y="43.18"/>
-<instance part="POWERIFACE" gate="-1" x="-45.72" y="66.04"/>
-<instance part="POWERIFACE" gate="-2" x="-45.72" y="63.5"/>
-<instance part="POWERIFACE" gate="-3" x="-45.72" y="60.96"/>
-<instance part="POWERGD" gate="-1" x="-12.7" y="35.56" rot="R90"/>
-<instance part="POWERGD" gate="-2" x="-43.18" y="38.1"/>
-<instance part="P+3" gate="VCC" x="-50.8" y="63.5" rot="R90"/>
-<instance part="P+4" gate="+12V" x="-50.8" y="66.04" rot="R90"/>
-<instance part="P+5" gate="+12V" x="-12.7" y="22.86" rot="R180"/>
-<instance part="GND3" gate="1" x="-50.8" y="60.96" rot="R270"/>
-<instance part="GND4" gate="1" x="-48.26" y="38.1" rot="R270"/>
-<instance part="C1" gate="G$1" x="-93.98" y="99.06"/>
-<instance part="C2" gate="G$1" x="-78.74" y="99.06"/>
-<instance part="C3" gate="G$1" x="-71.12" y="99.06"/>
-<instance part="C4" gate="G$1" x="-86.36" y="99.06"/>
-<instance part="GND6" gate="1" x="-88.9" y="91.44"/>
-<instance part="GND7" gate="1" x="-73.66" y="91.44"/>
-<instance part="P+6" gate="+12V" x="-88.9" y="104.14"/>
-<instance part="P+8" gate="VCC" x="-73.66" y="104.14"/>
-<instance part="R1" gate="G$1" x="76.2" y="48.26" rot="R180"/>
-<instance part="U$2" gate="IRM-60-12" x="40.64" y="20.32"/>
-<instance part="POWERGD1" gate="-1" x="-48.26" y="86.36" rot="R180"/>
-<instance part="POWERGD1" gate="-2" x="-50.8" y="91.44" rot="R180"/>
-<instance part="GND5" gate="1" x="-45.72" y="91.44" rot="R90"/>
-<instance part="P+7" gate="VCC" x="-43.18" y="86.36" rot="R270"/>
+<instance part="U$1" gate="G$1" x="88.9" y="71.12"/>
+<instance part="P+1" gate="VCC" x="48.26" y="81.28" rot="R90"/>
+<instance part="P+2" gate="+12V" x="45.72" y="30.48" rot="R90"/>
+<instance part="GND1" gate="1" x="50.8" y="60.96" rot="R270"/>
+<instance part="GND2" gate="1" x="45.72" y="10.16" rot="R270"/>
+<instance part="J1" gate="-1" x="144.78" y="55.88"/>
+<instance part="J2" gate="-1" x="121.92" y="43.18"/>
+<instance part="POWERGD" gate="-1" x="10.16" y="45.72"/>
+<instance part="POWERGD" gate="-2" x="10.16" y="48.26"/>
+<instance part="P+3" gate="VCC" x="2.54" y="63.5" rot="R90"/>
+<instance part="P+4" gate="+12V" x="2.54" y="66.04" rot="R90"/>
+<instance part="P+5" gate="+12V" x="2.54" y="45.72" rot="R90"/>
+<instance part="GND3" gate="1" x="2.54" y="60.96" rot="R270"/>
+<instance part="GND4" gate="1" x="5.08" y="48.26" rot="R270"/>
+<instance part="C1" gate="G$1" x="0" y="93.98"/>
+<instance part="C2" gate="G$1" x="15.24" y="93.98"/>
+<instance part="C3" gate="G$1" x="22.86" y="93.98"/>
+<instance part="C4" gate="G$1" x="7.62" y="93.98"/>
+<instance part="GND6" gate="1" x="5.08" y="86.36"/>
+<instance part="GND7" gate="1" x="20.32" y="86.36"/>
+<instance part="P+6" gate="+12V" x="5.08" y="99.06"/>
+<instance part="P+8" gate="VCC" x="20.32" y="99.06"/>
+<instance part="R1" gate="G$1" x="129.54" y="48.26" rot="R180"/>
+<instance part="U$2" gate="IRM-60-12" x="88.9" y="20.32"/>
+<instance part="POWERGD1" gate="-1" x="7.62" y="76.2"/>
+<instance part="POWERGD1" gate="-2" x="7.62" y="73.66"/>
+<instance part="GND5" gate="1" x="2.54" y="73.66" rot="R270"/>
+<instance part="P+7" gate="VCC" x="2.54" y="76.2" rot="R90"/>
+<instance part="U$3" gate="G$1" x="88.9" y="116.84"/>
+<instance part="GND8" gate="1" x="48.26" y="127" rot="R270"/>
+<instance part="P-1" gate="1" x="48.26" y="106.68" rot="R270"/>
+<instance part="POWERIFACE" gate="-1" x="7.62" y="66.04"/>
+<instance part="POWERIFACE" gate="-2" x="7.62" y="63.5"/>
+<instance part="POWERIFACE" gate="-3" x="7.62" y="60.96"/>
+<instance part="POWERIFACE" gate="-4" x="7.62" y="58.42"/>
+<instance part="P-2" gate="1" x="2.54" y="58.42" rot="R270"/>
+<instance part="P-3" gate="1" x="35.56" y="86.36"/>
+<instance part="C5" gate="G$1" x="38.1" y="93.98"/>
+<instance part="C6" gate="G$1" x="30.48" y="93.98"/>
+<instance part="GND9" gate="1" x="35.56" y="99.06" rot="R180"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="POWERIFACE" gate="-2" pin="S"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="-71.12" y1="101.6" x2="-73.66" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="96.52" x2="20.32" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="VCC" pin="VCC"/>
-<wire x1="-73.66" y1="101.6" x2="-78.74" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-73.66" y="101.6"/>
+<wire x1="20.32" y1="96.52" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
+<junction x="20.32" y="96.52"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="+V"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="-7.62" y1="83.82" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="POWERGD1" gate="-1" pin="S"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<pinref part="POWERIFACE" gate="-2" pin="S"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="POWERIFACE" gate="-1" pin="S"/>
-<pinref part="P+4" gate="+12V" pin="+12V"/>
-</segment>
-<segment>
 <pinref part="POWERGD" gate="-1" pin="S"/>
 <pinref part="P+5" gate="+12V" pin="+12V"/>
-<wire x1="-12.7" y1="33.02" x2="-12.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<wire x1="-86.36" y1="101.6" x2="-88.9" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="96.52" x2="5.08" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="+12V" pin="+12V"/>
-<wire x1="-88.9" y1="101.6" x2="-93.98" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-88.9" y="101.6"/>
+<wire x1="5.08" y1="96.52" x2="0" y2="96.52" width="0.1524" layer="91"/>
+<junction x="5.08" y="96.52"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="IRM-60-12" pin="+V"/>
 <pinref part="P+2" gate="+12V" pin="+12V"/>
-<wire x1="0" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+4" gate="+12V" pin="+12V"/>
+<pinref part="POWERIFACE" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="-V"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-2.54" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="0" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="U$2" gate="IRM-60-12" pin="-V"/>
-<wire x1="2.54" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="POWERIFACE" gate="-3" pin="S"/>
-<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="50.8" y1="10.16" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="POWERGD" gate="-2" pin="S"/>
@@ -11516,53 +11550,93 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="C1" gate="G$1" pin="-"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="-93.98" y1="93.98" x2="-88.9" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="0" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="-88.9" y1="93.98" x2="-86.36" y2="93.98" width="0.1524" layer="91"/>
-<junction x="-88.9" y="93.98"/>
+<wire x1="5.08" y1="88.9" x2="7.62" y2="88.9" width="0.1524" layer="91"/>
+<junction x="5.08" y="88.9"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="-"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="-78.74" y1="93.98" x2="-73.66" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="-73.66" y1="93.98" x2="-71.12" y2="93.98" width="0.1524" layer="91"/>
-<junction x="-73.66" y="93.98"/>
+<wire x1="20.32" y1="88.9" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
+<junction x="20.32" y="88.9"/>
 </segment>
 <segment>
 <pinref part="POWERGD1" gate="-2" pin="S"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="+V"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="POWERIFACE" gate="-3" pin="S"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="+"/>
+<wire x1="30.48" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<junction x="38.1" y="96.52"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ACN"/>
-<wire x1="73.66" y1="81.28" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="81.28" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="55.88" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="48.26" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="127" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="55.88" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="48.26" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="J1" gate="-1" pin="1"/>
-<junction x="86.36" y="55.88"/>
+<junction x="139.7" y="55.88"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="48.26" x2="139.7" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="IRM-60-12" pin="ACN"/>
-<junction x="78.74" y="30.48"/>
+<junction x="127" y="30.48"/>
+<wire x1="139.7" y1="81.28" x2="139.7" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="ACN"/>
+<wire x1="139.7" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ACL"/>
-<wire x1="73.66" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="60.96" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="48.26" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="43.18" x2="63.5" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="127" y1="60.96" x2="116.84" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="60.96" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="48.26" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="43.18" x2="116.84" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="J2" gate="-1" pin="1"/>
-<junction x="63.5" y="43.18"/>
+<junction x="116.84" y="43.18"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="IRM-60-12" pin="ACL"/>
+<wire x1="116.84" y1="60.96" x2="116.84" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="ACL"/>
+<wire x1="116.84" y1="106.68" x2="127" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="-5V" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="-V"/>
+<pinref part="P-1" gate="1" pin="-5V"/>
+</segment>
+<segment>
+<pinref part="POWERIFACE" gate="-4" pin="S"/>
+<pinref part="P-2" gate="1" pin="-5V"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="-"/>
+<pinref part="P-3" gate="1" pin="-5V"/>
+<wire x1="30.48" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
+<junction x="38.1" y="88.9"/>
 </segment>
 </net>
 </nets>
