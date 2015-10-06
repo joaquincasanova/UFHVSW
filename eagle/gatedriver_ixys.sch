@@ -17789,7 +17789,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C10" library="resistor" deviceset="C-US" device="050-075X075"/>
 <part name="C11" library="rcl" deviceset="CPOL-US" device="E5-10.5"/>
 <part name="C12" library="resistor" deviceset="C-US" device="050-075X075"/>
-<part name="R1" library="resistor" deviceset="R-US_" device="0207/10"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0414/15"/>
 <part name="C13" library="rcl" deviceset="CPOL-US" device="E5-10.5"/>
 <part name="C14" library="rcl" deviceset="CPOL-US" device="E5-10.5"/>
 <part name="C15" library="resistor" deviceset="C-US" device="050-075X075"/>

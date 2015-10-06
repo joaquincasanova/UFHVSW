@@ -59,6 +59,14 @@ void experiment(double LV, double HV, double D) {
   delay(100);
   //Serial.println("Voltage assignation");
   Serial.println("Positive");
+  for(int i=0;i<max(LVValue, HVValue);i++){
+    
+    Serial.println("Voltage out of DAC (mv) ");
+    Serial.println(PWMValue);
+    Serial.println(min(HVValue,i));
+    Serial.println(min(LVValue,i));  
+    dac.voutWrite(PWMValue, min(LVValue,i), 0 ,min(HVValue,i));
+  }
   dac.voutWrite(PWMValue, LVValue, 0 ,HVValue);
 
   ///
@@ -75,28 +83,28 @@ void loop() {
   Serial.println("Howdy");
   dac.setVref(0, 0, 0, 0); // set to use external voltage reference (=VDD, 2.7 - 5.5V)
   int vref = dac.getVref(1); // get current voltage reference setting of channel 1
-//  Serial.print("Voltage reference setting of channel 1 = "); // serial print of value
-//  Serial.println(vref, DEC); // serial print of value
-//
-  int id = dac.getId(); // return devideID of object
-//  Serial.print("Device ID  = "); // serial print of value
-//  Serial.println(id, DEC); // serial print of value
-//  Serial.println("Duty?"); //Prompt User for Input
-//  while(Serial.available()==0) { // Wait for User to Input Data  
-//  }
-//  double D=Serial.parseFloat();  //Read the data the user has input
-//  Serial.println("DV?"); //Prompt User for Input
-//  while(Serial.available()==0) { // Wait for User to Input Data  
-//  }
-//  double DV=Serial.parseFloat();  //Read the data the user has input
-//  Serial.println("CV?"); //Prompt User for Input
-//  while(Serial.available()==0) { // Wait for User to Input Data  
-//  }
-//  double CV=Serial.parseFloat();  //Read the data the user has input
+  Serial.print("Voltage reference setting of channel 1 = "); // serial print of value
+  Serial.println(vref, DEC); // serial print of value
 
-  double DV = 100;
-  double CV = 0;
-  double D = 33;
+  int id = dac.getId(); // return devideID of object
+  Serial.print("Device ID  = "); // serial print of value
+  Serial.println(id, DEC); // serial print of value
+  Serial.println("Duty?"); //Prompt User for Input
+  while(Serial.available()==0) { // Wait for User to Input Data  
+  }
+  double D=Serial.parseFloat();  //Read the data the user has input
+  Serial.println("DV?"); //Prompt User for Input
+  while(Serial.available()==0) { // Wait for User to Input Data  
+  }
+  double DV=Serial.parseFloat();  //Read the data the user has input
+  Serial.println("CV?"); //Prompt User for Input
+  while(Serial.available()==0) { // Wait for User to Input Data  
+  }
+  double CV=Serial.parseFloat();  //Read the data the user has input
+
+//  double DV = 200;
+//  double CV = 0;
+//  double D = 33;
   double HV = DV + DV*D/(100-D);
   Serial.println("HV:");
   Serial.println(HV);

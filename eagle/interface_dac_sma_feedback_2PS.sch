@@ -14971,7 +14971,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="P+10" gate="VCC" x="294.64" y="68.58"/>
 <instance part="X1" gate="G$1" x="289.56" y="91.44" rot="R90"/>
 <instance part="GND17" gate="1" x="292.1" y="96.52" rot="R180"/>
-<instance part="R18" gate="G$1" x="10.16" y="-73.66" rot="R180"/>
+<instance part="R18" gate="G$1" x="12.7" y="-78.74" rot="R180"/>
 <instance part="GND1" gate="1" x="35.56" y="-81.28"/>
 <instance part="CONTROLGD2" gate="-1" x="53.34" y="-73.66"/>
 <instance part="CONTROLGD2" gate="-2" x="53.34" y="-78.74"/>
@@ -15174,7 +15174,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 </net>
 <net name="AGND" class="0">
 <segment>
-<wire x1="0" y1="-73.66" x2="5.08" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-78.74" x2="7.62" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="R18" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -15218,8 +15218,8 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <wire x1="17.78" y1="96.52" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="17.78" y1="-78.74" x2="12.7" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="OK2" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="-73.66" x2="12.7" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="OK2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -15233,13 +15233,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <pinref part="U$1" gate="G$1" pin="P$6"/>
 <pinref part="X1" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="93.98" x2="279.4" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="-73.66" x2="15.24" y2="-73.66" width="0.1524" layer="91"/>
-<pinref part="OK2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="ENSW2" class="0">
@@ -15408,6 +15401,12 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="T1" gate="G$1" pin="B"/>
 <pinref part="R4" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="OK2" gate="G$1" pin="C"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

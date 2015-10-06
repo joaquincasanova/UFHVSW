@@ -3052,7 +3052,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="83.7692" y="75.4126" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="83.7692" y="75.4126" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R18" library="rcl" package="0207/12" value="100" x="17.145" y="32.385"/>
+<element name="R18" library="rcl" package="0207/12" value="100" x="19.685" y="38.1"/>
 <element name="CONTROLGD2" library="con-molex" package="KK-156-2" value="" x="10.668" y="74.422" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="10.668" y="74.422" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="10.668" y="74.422" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3198,9 +3198,9 @@ design rules under a new name.</description>
 <wire x1="55.626" y1="19.431" x2="48.641" y2="12.446" width="1.4224" layer="16"/>
 <wire x1="48.641" y1="12.446" x2="48.641" y2="7.239" width="1.4224" layer="16"/>
 <wire x1="48.641" y1="7.239" x2="48.641" y2="6.985" width="1.4224" layer="16"/>
-<wire x1="23.495" y1="32.385" x2="23.495" y2="44.323" width="1.4224" layer="16"/>
-<wire x1="23.495" y1="44.323" x2="23.876" y2="44.704" width="1.4224" layer="16"/>
-<wire x1="23.876" y1="44.704" x2="6.096" y2="44.704" width="1.4224" layer="16"/>
+<wire x1="26.035" y1="38.1" x2="21.336" y2="44.323" width="1.4224" layer="16"/>
+<wire x1="21.336" y1="44.323" x2="21.717" y2="44.704" width="1.4224" layer="16"/>
+<wire x1="21.717" y1="44.704" x2="6.096" y2="44.704" width="1.4224" layer="16"/>
 <wire x1="6.096" y1="44.704" x2="4.699" y2="43.307" width="1.4224" layer="16"/>
 <wire x1="4.699" y1="43.307" x2="4.699" y2="14.732" width="1.4224" layer="16"/>
 <wire x1="4.699" y1="14.732" x2="6.35" y2="13.081" width="1.4224" layer="16"/>
@@ -3228,20 +3228,20 @@ design rules under a new name.</description>
 <signal name="SDA">
 <contactref element="PCB1" pad="D2"/>
 <contactref element="IC1" pad="2"/>
-<wire x1="46.482" y1="37.465" x2="46.482" y2="22.606" width="1.4224" layer="16"/>
-<wire x1="46.482" y1="22.606" x2="46.863" y2="22.225" width="1.4224" layer="16"/>
-<wire x1="46.482" y1="37.465" x2="47.371" y2="38.354" width="1.4224" layer="16"/>
+<wire x1="44.45" y1="35.433" x2="44.45" y2="28.575" width="1.4224" layer="16"/>
+<wire x1="44.45" y1="35.433" x2="47.371" y2="38.354" width="1.4224" layer="16"/>
 <wire x1="47.371" y1="38.354" x2="47.371" y2="41.783" width="1.4224" layer="16"/>
 <wire x1="47.371" y1="41.783" x2="47.117" y2="42.037" width="1.4224" layer="16"/>
+<wire x1="44.45" y1="28.575" x2="41.021" y2="25.146" width="1.4224" layer="16"/>
+<wire x1="41.021" y1="25.146" x2="41.021" y2="22.479" width="1.4224" layer="16"/>
 <wire x1="47.371" y1="41.783" x2="47.371" y2="41.529" width="0" layer="19" extent="16-16"/>
-<wire x1="41.021" y1="22.479" x2="46.482" y2="22.606" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="PWM9">
 <contactref element="PCB1" pad="D9"/>
-<contactref element="OK2" pad="2"/>
-<wire x1="13.335" y1="41.402" x2="13.335" y2="36.83" width="1.4224" layer="16"/>
-<wire x1="13.335" y1="36.83" x2="23.241" y2="26.924" width="1.4224" layer="16"/>
-<wire x1="23.241" y1="26.924" x2="23.241" y2="22.479" width="1.4224" layer="16"/>
+<wire x1="10.795" y1="36.83" x2="23.241" y2="24.384" width="1.4224" layer="16"/>
+<wire x1="23.241" y1="24.384" x2="23.241" y2="22.479" width="1.4224" layer="16"/>
+<contactref element="OK2" pad="1"/>
+<wire x1="10.795" y1="41.402" x2="10.795" y2="36.83" width="1.4224" layer="16"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$1" pad="SET"/>
@@ -3253,11 +3253,6 @@ design rules under a new name.</description>
 <contactref element="X1" pad="1"/>
 <wire x1="76.327" y1="75.438" x2="83.4898" y2="75.438" width="1.4224" layer="16"/>
 <wire x1="83.4898" y1="75.438" x2="83.7692" y2="75.4126" width="1.4224" layer="16"/>
-</signal>
-<signal name="N$7">
-<contactref element="R18" pad="1"/>
-<contactref element="OK2" pad="1"/>
-<wire x1="10.795" y1="41.402" x2="10.795" y2="32.385" width="1.4224" layer="16"/>
 </signal>
 <signal name="ENSW2">
 <contactref element="CONTROLGD2" pad="1"/>
@@ -3419,6 +3414,11 @@ design rules under a new name.</description>
 <contactref element="T1" pad="1"/>
 <contactref element="R4" pad="1"/>
 <wire x1="5.588" y1="105.664" x2="13.589" y2="105.664" width="1.4224" layer="16"/>
+</signal>
+<signal name="N$6">
+<contactref element="OK2" pad="2"/>
+<contactref element="R18" pad="1"/>
+<wire x1="13.335" y1="38.1" x2="13.335" y2="41.402" width="1.4224" layer="16"/>
 </signal>
 </signals>
 </board>
