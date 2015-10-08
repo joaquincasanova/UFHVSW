@@ -9965,9 +9965,9 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="C3" library="rcl" deviceset="C-US" device="102-043X133" value=".01u"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="C12" library="rcl" deviceset="C-US" device="075-042X103" value=".01u"/>
-<part name="R1" library="resistor" deviceset="R-US_" device="0207/12" value="2M"/>
-<part name="R7" library="resistor" deviceset="R-US_" device="0207/12" value="2M"/>
+<part name="C12" library="rcl" deviceset="C-US" device="102-043X133" value=".01u"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0613/15" value="2M"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="0613/15" value="2M"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -9983,8 +9983,8 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="C2" library="rcl" deviceset="C-US" device="102-043X133" value="10p"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="rcl" deviceset="C-US" device="075-042X103" value="1n"/>
-<part name="C7" library="rcl" deviceset="C-US" device="075-042X103" value="10p"/>
+<part name="C4" library="rcl" deviceset="C-US" device="102-043X133" value="1n"/>
+<part name="C7" library="rcl" deviceset="C-US" device="102-043X133" value="10p"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
@@ -9994,25 +9994,25 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="D2" library="diode" deviceset="1N4004" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="LV+" library="testpad" deviceset="TP" device="PAD1-20Y"/>
-<part name="C8" library="rcl" deviceset="C-US" device="075-042X103" value=".01u"/>
+<part name="C8" library="rcl" deviceset="C-US" device="102-043X133" value=".01u"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="resistor" deviceset="R-US_" device="0207/12" value="2M"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="0613/15" value="2M"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="pot" deviceset="TRIM_US-" device="B90P"/>
 <part name="C9" library="rcl" deviceset="C-US" device="275-205X316" value="1u"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="C10" library="rcl" deviceset="C-US" device="075-042X103" value="1n"/>
-<part name="C11" library="rcl" deviceset="C-US" device="075-042X103" value="10p"/>
+<part name="C10" library="rcl" deviceset="C-US" device="102-043X133" value="1n"/>
+<part name="C11" library="rcl" deviceset="C-US" device="102-043X133" value="10p"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="D3" library="diode" deviceset="1N4004" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="C13" library="rcl" deviceset="C-US" device="075-042X103" value=".01u"/>
+<part name="C13" library="rcl" deviceset="C-US" device="102-043X133" value=".01u"/>
 <part name="C14" library="rcl" deviceset="C-US" device="275-205X316" value="1u"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="LV-" library="testpad" deviceset="TP" device="PAD1-20Y"/>
-<part name="C15" library="rcl" deviceset="C-US" device="075-042X103" value="1n"/>
-<part name="C16" library="rcl" deviceset="C-US" device="075-042X103" value="10p"/>
+<part name="C15" library="rcl" deviceset="C-US" device="102-043X133" value="1n"/>
+<part name="C16" library="rcl" deviceset="C-US" device="102-043X133" value="10p"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="D4" library="diode" deviceset="1N4004" device=""/>
