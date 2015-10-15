@@ -10019,6 +10019,12 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="CONTROLHV" library="con-molex" deviceset="KK-156-4" device=""/>
 <part name="FDBKHV" library="con-molex" deviceset="KK-156-4" device=""/>
+<part name="C17" library="rcl" deviceset="C-US" device="102-043X133" value=".1u"/>
+<part name="C18" library="rcl" deviceset="C-US" device="102-043X133" value=".1u"/>
+<part name="C19" library="rcl" deviceset="C-US" device="102-043X133" value=".1u"/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND29" library="supply1" deviceset="GND" device=""/>
+<part name="GND30" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10088,12 +10094,18 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <instance part="GND28" gate="1" x="5.08" y="27.94"/>
 <instance part="CONTROLHV" gate="-1" x="17.78" y="53.34" rot="R180"/>
 <instance part="CONTROLHV" gate="-2" x="106.68" y="27.94" rot="R180"/>
-<instance part="CONTROLHV" gate="-3" x="33.02" y="-5.08" rot="R180"/>
+<instance part="CONTROLHV" gate="-3" x="17.78" y="-5.08" rot="R180"/>
 <instance part="CONTROLHV" gate="-4" x="5.08" y="33.02" rot="R90"/>
 <instance part="FDBKHV" gate="-1" x="96.52" y="63.5"/>
 <instance part="FDBKHV" gate="-2" x="134.62" y="58.42" rot="R90"/>
 <instance part="FDBKHV" gate="-3" x="101.6" y="-20.32"/>
 <instance part="FDBKHV" gate="-4" x="12.7" y="33.02" rot="R90"/>
+<instance part="C17" gate="G$1" x="22.86" y="50.8"/>
+<instance part="C18" gate="G$1" x="22.86" y="-7.62"/>
+<instance part="C19" gate="G$1" x="109.22" y="25.4"/>
+<instance part="GND24" gate="1" x="22.86" y="43.18"/>
+<instance part="GND29" gate="1" x="109.22" y="17.78"/>
+<instance part="GND30" gate="1" x="22.86" y="-15.24"/>
 </instances>
 <busses>
 </busses>
@@ -10220,6 +10232,18 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <segment>
 <pinref part="FDBKHV" gate="-4" pin="S"/>
 <pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="GND30" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10350,8 +10374,11 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <net name="N$13" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="+VIN"/>
-<wire x1="20.32" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="CONTROLHV" gate="-1" pin="S"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
+<junction x="22.86" y="53.34"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -10359,12 +10386,18 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="U$3" gate="G$1" pin="+VIN"/>
 <wire x1="109.22" y1="27.94" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="CONTROLHV" gate="-2" pin="S"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<junction x="109.22" y="27.94"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="+VIN"/>
 <pinref part="CONTROLHV" gate="-3" pin="S"/>
+<wire x1="20.32" y1="-5.08" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="-5.08" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="22.86" y="-5.08"/>
 </segment>
 </net>
 </nets>

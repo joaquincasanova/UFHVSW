@@ -61,10 +61,10 @@ void experiment(double LV, double HV, double D) {
   Serial.println("Positive");
   for(int i=0;i<max(LVValue, HVValue);i++){
     
-    Serial.println("Voltage out of DAC (mv) ");
-    Serial.println(PWMValue);
-    Serial.println(min(HVValue,i));
-    Serial.println(min(LVValue,i));  
+//    Serial.println("Voltage out of DAC (mv) ");
+//    Serial.println(PWMValue);
+//    Serial.println(min(HVValue,i));
+//    Serial.println(min(LVValue,i));  
     dac.voutWrite(PWMValue, min(LVValue,i), 0 ,min(HVValue,i));
   }
   dac.voutWrite(PWMValue, LVValue, 0 ,HVValue);
