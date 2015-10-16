@@ -54,8 +54,6 @@ void experiment(double LV, double HV, double D) {
   delay(100);
   //positive or negative? enable correct gate driver
 
-  digitalWrite(ENSW1Pin, HIGH);
-
   delay(100);
   //Serial.println("Voltage assignation");
   Serial.println("Positive");
@@ -68,6 +66,8 @@ void experiment(double LV, double HV, double D) {
     dac.voutWrite(PWMValue, min(LVValue,i), 0 ,min(HVValue,i));
   }
   dac.voutWrite(PWMValue, LVValue, 0 ,HVValue);
+
+  digitalWrite(ENSW1Pin, HIGH);
 
   ///
   //actual run

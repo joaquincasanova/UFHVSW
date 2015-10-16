@@ -6117,12 +6117,6 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="-5V">
-<wire x1="-1.27" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="-5V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="P+">
@@ -6142,19 +6136,6 @@ Source: AVX .. aphvc.pdf</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-5V" prefix="P-">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="-5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -11903,6 +11884,24 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <text x="-8.44" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="9.71" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="KK-156-3">
+<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
+<wire x1="5.79" y1="4.95" x2="3.99" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="3.99" y1="4.95" x2="-3.965" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-3.965" y1="4.95" x2="-5.765" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-5.765" y1="4.95" x2="-5.765" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="-5.765" y1="-4.825" x2="5.79" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="5.79" y1="-4.825" x2="5.79" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-3.965" y1="2.525" x2="3.99" y2="2.525" width="0.2032" layer="21"/>
+<wire x1="3.99" y1="2.525" x2="3.99" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-3.965" y1="2.525" x2="-3.965" y2="4.95" width="0.2032" layer="21"/>
+<pad name="1" x="-3.96" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="3" x="3.96" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<text x="-6.46" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="7.73" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -11958,6 +11957,32 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <connect gate="-2" pin="S" pad="2"/>
 <connect gate="-3" pin="S" pad="3"/>
 <connect gate="-4" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KK-156-3" prefix="X" uservalue="yes">
+<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="KK-156-3">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -14820,9 +14845,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 </classes>
 <parts>
 <part name="PCB1" library="E14_Arduino_published" deviceset="ARDUINO_MICRO" device=""/>
-<part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="P+2" library="supply2" deviceset="+12V" device=""/>
 <part name="U$1" library="linear-technology" deviceset="LTC6992" device=""/>
 <part name="C4" library="resistor" deviceset="C-US" device="075-063X106"/>
 <part name="R16" library="pot" deviceset="TRIM_US-" device="B90P"/>
@@ -14869,14 +14891,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="FDBKHV" library="con-molex" deviceset="KK-156-4" device="" value="40k"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="POWERINTERFACE" library="con-molex" deviceset="KK-156-4" device=""/>
-<part name="P-1" library="supply1" deviceset="-5V" device=""/>
-<part name="R5" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
-<part name="R8" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
-<part name="P-2" library="supply1" deviceset="-5V" device=""/>
-<part name="P+13" library="supply1" deviceset="VCC" device=""/>
-<part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="U$3" library="texas" deviceset="OPA735" device="DIL"/>
 <part name="U$4" library="texas" deviceset="OPA735" device="DIL"/>
 <part name="U$5" library="texas" deviceset="OPA735" device="DIL"/>
 <part name="U$6" library="texas" deviceset="OPA735" device="DIL"/>
@@ -14894,7 +14908,11 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="R10" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
 <part name="R11" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="0207/12" value="12"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
+<part name="POWERINTERFACE1" library="con-molex" deviceset="KK-156-3" device=""/>
+<part name="P+13" library="supply2" deviceset="+12V" device=""/>
+<part name="P+15" library="supply1" deviceset="VCC" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14903,9 +14921,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 </plain>
 <instances>
 <instance part="PCB1" gate="G$1" x="27.94" y="81.28"/>
-<instance part="P+5" gate="VCC" x="88.9" y="38.1"/>
-<instance part="GND4" gate="1" x="86.36" y="33.02" rot="R270"/>
-<instance part="P+2" gate="+12V" x="88.9" y="40.64"/>
 <instance part="U$1" gate="G$1" x="266.7" y="109.22"/>
 <instance part="C4" gate="G$1" x="294.64" y="83.82"/>
 <instance part="R16" gate="G$1" x="254" y="101.6"/>
@@ -14954,22 +14969,11 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="CONTROLHV" gate="-3" x="218.44" y="30.48"/>
 <instance part="CONTROLHV" gate="-4" x="231.14" y="55.88"/>
 <instance part="FDBKHV" gate="-1" x="162.56" y="73.66"/>
-<instance part="FDBKHV" gate="-2" x="162.56" y="43.18"/>
-<instance part="FDBKHV" gate="-3" x="200.66" y="2.54"/>
+<instance part="FDBKHV" gate="-2" x="162.56" y="40.64"/>
+<instance part="FDBKHV" gate="-3" x="162.56" y="2.54"/>
 <instance part="FDBKHV" gate="-4" x="231.14" y="33.02"/>
 <instance part="GND2" gate="1" x="228.6" y="53.34"/>
 <instance part="GND6" gate="1" x="228.6" y="30.48"/>
-<instance part="POWERINTERFACE" gate="-1" x="96.52" y="38.1"/>
-<instance part="POWERINTERFACE" gate="-2" x="96.52" y="35.56"/>
-<instance part="POWERINTERFACE" gate="-3" x="96.52" y="33.02"/>
-<instance part="POWERINTERFACE" gate="-4" x="96.52" y="30.48"/>
-<instance part="P-1" gate="1" x="93.98" y="27.94"/>
-<instance part="R5" gate="G$1" x="193.04" y="2.54" rot="R180"/>
-<instance part="R8" gate="G$1" x="170.18" y="2.54" rot="R180"/>
-<instance part="P-2" gate="1" x="177.8" y="-2.54" rot="R180"/>
-<instance part="P+13" gate="VCC" x="177.8" y="-22.86" rot="R180"/>
-<instance part="GND18" gate="1" x="185.42" y="-17.78"/>
-<instance part="U$3" gate="G$1" x="177.8" y="-12.7" rot="R180"/>
 <instance part="U$4" gate="G$1" x="167.64" y="22.86"/>
 <instance part="U$5" gate="G$1" x="167.64" y="58.42"/>
 <instance part="U$6" gate="G$1" x="167.64" y="91.44"/>
@@ -14988,16 +14992,17 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="R10" gate="G$1" x="147.32" y="93.98"/>
 <instance part="R11" gate="G$1" x="147.32" y="83.82"/>
 <instance part="R12" gate="G$1" x="144.78" y="73.66"/>
+<instance part="POWERINTERFACE1" gate="-1" x="106.68" y="12.7"/>
+<instance part="POWERINTERFACE1" gate="-2" x="106.68" y="10.16"/>
+<instance part="POWERINTERFACE1" gate="-3" x="106.68" y="7.62"/>
+<instance part="P+13" gate="+12V" x="104.14" y="15.24"/>
+<instance part="P+15" gate="VCC" x="101.6" y="10.16" rot="R90"/>
+<instance part="GND18" gate="1" x="101.6" y="7.62" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<wire x1="93.98" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="POWERINTERFACE" gate="-3" pin="S"/>
-</segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="A"/>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -15067,10 +15072,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND18" gate="1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="+IN"/>
-</segment>
-<segment>
 <pinref part="GND19" gate="1" pin="GND"/>
 <pinref part="U$4" gate="G$1" pin="V-"/>
 </segment>
@@ -15085,6 +15086,10 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="POWERINTERFACE1" gate="-3" pin="S"/>
+<pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -15119,11 +15124,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="93.98" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<pinref part="POWERINTERFACE" gate="-2" pin="S"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="P$5"/>
 <pinref part="P+9" gate="VCC" pin="VCC"/>
 </segment>
@@ -15152,8 +15152,8 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <wire x1="55.88" y1="38.1" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+13" gate="VCC" pin="VCC"/>
-<pinref part="U$3" gate="G$1" pin="V+"/>
+<pinref part="POWERINTERFACE1" gate="-2" pin="S"/>
+<pinref part="P+15" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -15266,11 +15266,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="P+2" gate="+12V" pin="+12V"/>
-<wire x1="88.9" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="POWERINTERFACE" gate="-1" pin="S"/>
-</segment>
-<segment>
 <pinref part="P+3" gate="+12V" pin="+12V"/>
 <pinref part="IC2" gate="1" pin="IN"/>
 </segment>
@@ -15299,6 +15294,10 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <pinref part="P+14" gate="+12V" pin="+12V"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="POWERINTERFACE1" gate="-1" pin="S"/>
+<pinref part="P+13" gate="+12V" pin="+12V"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -15326,16 +15325,11 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="170.18" y1="-12.7" x2="160.02" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-12.7" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="2.54" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="7.62" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="2.54" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="-IN"/>
-<pinref part="U$3" gate="G$1" pin="OUT"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<junction x="160.02" y="7.62"/>
+<pinref part="FDBKHV" gate="-3" pin="S"/>
+<wire x1="160.02" y1="2.54" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -15392,7 +15386,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <pinref part="FDBKHV" gate="-2" pin="S"/>
 <pinref part="U$5" gate="G$1" pin="-IN"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="45.72" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="45.72" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="160.02" y="45.72"/>
 </segment>
 </net>
@@ -15410,32 +15404,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="CONTROLHV" gate="-2" pin="S"/>
 <pinref part="IC3" gate="1" pin="OUT"/>
-</segment>
-</net>
-<net name="-5V" class="0">
-<segment>
-<pinref part="POWERINTERFACE" gate="-4" pin="S"/>
-<pinref part="P-1" gate="1" pin="-5V"/>
-</segment>
-<segment>
-<pinref part="P-2" gate="1" pin="-5V"/>
-<pinref part="U$3" gate="G$1" pin="V-"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="FDBKHV" gate="-3" pin="S"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="2.54" x2="187.96" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="-10.16" x2="185.42" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="2.54" x2="175.26" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="-IN"/>
 </segment>
 </net>
 <net name="N$21" class="0">
