@@ -14895,6 +14895,12 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="R10" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
 <part name="R11" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="0207/12" value="12"/>
+<part name="C8" library="resistor" deviceset="C-US" device="075-063X106"/>
+<part name="C9" library="resistor" deviceset="C-US" device="075-063X106"/>
+<part name="C10" library="resistor" deviceset="C-US" device="075-063X106"/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14949,9 +14955,9 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="P+4" gate="+12V" x="167.64" y="68.58"/>
 <instance part="GND12" gate="1" x="167.64" y="48.26"/>
 <instance part="P+8" gate="+12V" x="200.66" y="68.58"/>
-<instance part="CONTROLHV" gate="-1" x="218.44" y="99.06"/>
-<instance part="CONTROLHV" gate="-2" x="218.44" y="66.04"/>
-<instance part="CONTROLHV" gate="-3" x="218.44" y="30.48"/>
+<instance part="CONTROLHV" gate="-1" x="223.52" y="99.06"/>
+<instance part="CONTROLHV" gate="-2" x="223.52" y="66.04"/>
+<instance part="CONTROLHV" gate="-3" x="223.52" y="30.48"/>
 <instance part="CONTROLHV" gate="-4" x="231.14" y="55.88"/>
 <instance part="FDBKHV" gate="-1" x="162.56" y="73.66"/>
 <instance part="FDBKHV" gate="-2" x="162.56" y="43.18"/>
@@ -14988,6 +14994,12 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="R10" gate="G$1" x="147.32" y="93.98"/>
 <instance part="R11" gate="G$1" x="147.32" y="83.82"/>
 <instance part="R12" gate="G$1" x="144.78" y="73.66"/>
+<instance part="C8" gate="G$1" x="218.44" y="96.52"/>
+<instance part="C9" gate="G$1" x="218.44" y="63.5"/>
+<instance part="C10" gate="G$1" x="218.44" y="27.94"/>
+<instance part="GND21" gate="1" x="218.44" y="88.9"/>
+<instance part="GND24" gate="1" x="218.44" y="55.88"/>
+<instance part="GND25" gate="1" x="218.44" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -15085,6 +15097,18 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -15378,12 +15402,20 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="CONTROLHV" gate="-1" pin="S"/>
 <pinref part="IC2" gate="1" pin="OUT"/>
+<wire x1="220.98" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="99.06" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
+<junction x="218.44" y="99.06"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="CONTROLHV" gate="-3" pin="S"/>
 <pinref part="IC4" gate="1" pin="OUT"/>
+<wire x1="220.98" y1="30.48" x2="218.44" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="30.48" x2="215.9" y2="30.48" width="0.1524" layer="91"/>
+<junction x="218.44" y="30.48"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -15410,6 +15442,10 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="CONTROLHV" gate="-2" pin="S"/>
 <pinref part="IC3" gate="1" pin="OUT"/>
+<wire x1="220.98" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="66.04" x2="215.9" y2="66.04" width="0.1524" layer="91"/>
+<junction x="218.44" y="66.04"/>
 </segment>
 </net>
 <net name="-5V" class="0">
