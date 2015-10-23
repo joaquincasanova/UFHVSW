@@ -15097,9 +15097,9 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="R3" gate="G$1" x="165.1" y="78.74"/>
 <instance part="C3" gate="G$1" x="177.8" y="86.36" rot="R180"/>
 <instance part="R4" gate="G$1" x="165.1" y="45.72"/>
-<instance part="C5" gate="G$1" x="177.8" y="53.34" rot="R180"/>
+<instance part="C5" gate="G$1" x="180.34" y="53.34" rot="R180"/>
 <instance part="R9" gate="G$1" x="165.1" y="7.62"/>
-<instance part="C6" gate="G$1" x="177.8" y="17.78" rot="R180"/>
+<instance part="C6" gate="G$1" x="180.34" y="10.16" rot="R180"/>
 <instance part="P+14" gate="+12V" x="88.9" y="12.7"/>
 <instance part="C7" gate="G$1" x="88.9" y="7.62"/>
 <instance part="GND20" gate="1" x="88.9" y="0"/>
@@ -15504,7 +15504,6 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <wire x1="193.04" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="58.42" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="B"/>
 <pinref part="IC2" gate="B" pin="OUT"/>
 <junction x="180.34" y="58.42"/>
@@ -15546,7 +15545,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <wire x1="193.04" y1="22.86" x2="180.34" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="22.86" x2="177.8" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="22.86" x2="180.34" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="B"/>
 <pinref part="IC3" gate="A" pin="OUT"/>
 <junction x="180.34" y="22.86"/>
@@ -15570,16 +15569,15 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="45.72" x2="177.8" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="45.72" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="45.72" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="45.72" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="7.62" x2="177.8" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="7.62" x2="177.8" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="7.62" x2="180.34" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
