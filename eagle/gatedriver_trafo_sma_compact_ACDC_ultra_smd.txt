@@ -1,0 +1,93 @@
+Partlist exported from C:/Users/jcasa/Documents/projects/UFHVSW/eagle/gatedriver_trafo_sma_compact_ACDC_ultra_smd.sch at 10/27/2015 9:55:35 AM
+
+Part       Value         Device          Package      Description                MF MPN       OC_FARNELL OC_NEWARK TP_SIGNAL_NAME
+C1         .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C2         .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C3         .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C4         .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C5         .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C6         .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C7                       C-US050-030X075 C050-030X075 CAPACITOR, American symbol                                                 
+C8         10p           C-US102-064X133 C102-064X133 CAPACITOR, American symbol                                                 
+C9         10p           C-US102-064X133 C102-064X133 CAPACITOR, American symbol                                                 
+C10        .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C11        .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C12        .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C14        .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C15        .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+C16        .22u          C-USC0805       C0805        CAPACITOR, American symbol                                                 
+CONTROLGD1               KK-156-2        KK-156-2     KK 156 HEADER                           unknown    unknown                 
+D1         SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D2         4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D3                       DIODE-SMB       SMB          DIODE                                                                      
+D4         SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D5         4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D6         4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D7                       DIODE-SMB       SMB          DIODE                                                                      
+D8                       DIODE-SMB       SMB          DIODE                                                                      
+D9         SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D10        SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D11        1N4148DO35-10 1N4148DO35-10   DO35-10      DIODE                                                                      
+D12                      DIODE-SMB       SMB          DIODE                                                                      
+D13        SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D14        4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D15        SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D16        4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D17        4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D18                      DIODE-SMB       SMB          DIODE                                                                      
+D19                      DIODE-SMB       SMB          DIODE                                                                      
+D20        SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D21        SMBJ170D-M3/H SMBJ170D-M3/H   DO214AA                                                                                 
+D22        4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D23        4742          ZENER-DIODESMB  SMB          Z-Diode                                                                    
+D24                      DIODE-SMB       SMB          DIODE                                                                      
+D25                      DIODE-SMB       SMB          DIODE                                                                      
+GND        TPPAD1-20Y    TPPAD1-20Y      P1-20Y       Test pad                                                                   
+GND15      TPPAD1-20Y    TPPAD1-20Y      P1-20Y       Test pad                                                                   
+HV1        TPPAD1-20Y    TPPAD1-20Y      P1-20Y       Test pad                                                                   
+HV2        TPPAD1-20Y    TPPAD1-20Y      P1-20Y       Test pad                                                                   
+K1         G5V-2         G5V-2           G5V-2        OMRON PCB Relay               G5V-2 5DC 9949488    78K5703                 
+OUT        TPPAD1-20Y    TPPAD1-20Y      P1-20Y       Test pad                                                                   
+POWERGD                  KK-156-2        KK-156-2     KK 156 HEADER                           unknown    unknown                 
+R1         100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R2         100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R3         100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R4         1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R5         100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R6         10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R7         1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R8         10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R9         10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R10        1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R11        1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R12        10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R13        50            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R14        50            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R15        1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R16        1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R17        100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R18        100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R19        10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R20        10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R21        50            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R22        1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R23        1M            R-US_R2512      R2512        RESISTOR, American symbol                                                  
+R24        100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R25        100k          R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R26        10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R27        10            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+R28        50            R-US_R0805      R0805        RESISTOR, American symbol                                                  
+U$1        DA-2320SMD6   DA-2320SMD6     SMD6                                                                                    
+U$2        VN2450        VN2450          SOT89-BCE                                                                               
+U$3        UCC27425      UCC27425        DIL08                                                                                   
+U$4        VP2450        VP2450          SOT89-BCE                                                                               
+U$5        VP2450        VP2450          SOT89-BCE                                                                               
+U$6        VN2450        VN2450          SOT89-BCE                                                                               
+U$7        DA-2320SMD6   DA-2320SMD6     SMD6                                                                                    
+U$8        DA-2320SMD6   DA-2320SMD6     SMD6                                                                                    
+U$9        VP2450        VP2450          SOT89-BCE                                                                               
+U$10       VP2450        VP2450          SOT89-BCE                                                                               
+U$11       VN2450        VN2450          SOT89-BCE                                                                               
+U$12       VN2450        VN2450          SOT89-BCE                                                                               
+U$13       DA-2320SMD6   DA-2320SMD6     SMD6                                                                                    
+X4         BU-SMA-V      BU-SMA-V        BU-SMA-V     FEMALE SMA CONNECTOR                    unknown    unknown                 

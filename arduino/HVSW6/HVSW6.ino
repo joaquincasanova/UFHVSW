@@ -12,7 +12,7 @@ mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
 //enable gate driver
 int ENSW1Pin = 9;
 
-double LVMax = 400;
+double LVMax = 1000;
 double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
@@ -105,10 +105,10 @@ void loop() {
 //  double DV = 200;
 //  double CV = 0;
 //  double D = 33;
-  double HV = DV + DV*D/(100-D);
+  double HV = DV + CV;
   Serial.println("HV:");
   Serial.println(HV);
-  double LV = DV * D/(100 - D) - CV ;
+  double LV = -DV * D/(100 - D) + CV ;
   Serial.println("LV:");
   Serial.println(LV);
   delay(100);

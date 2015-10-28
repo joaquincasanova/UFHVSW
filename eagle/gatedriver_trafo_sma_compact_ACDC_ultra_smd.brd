@@ -2949,6 +2949,12 @@ design rules under a new name.</description>
 <element name="R28" library="rcl" package="R0805" value="50" x="44.704" y="62.484" rot="R180"/>
 <element name="D24" library="diode" package="SMB" value="" x="66.802" y="70.612"/>
 <element name="D25" library="diode" package="SMB" value="" x="67.056" y="54.61"/>
+<element name="GND" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="42.672" y="8.128">
+<attribute name="TP_SIGNAL_NAME" value="" x="42.672" y="8.128" size="1.778" layer="27" display="off"/>
+</element>
+<element name="GND15" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="42.672" y="159.766">
+<attribute name="TP_SIGNAL_NAME" value="" x="42.672" y="159.766" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2974,8 +2980,8 @@ design rules under a new name.</description>
 <wire x1="17.018" y1="74.168" x2="15.24" y2="74.168" width="1.6764" layer="16"/>
 <wire x1="15.24" y1="74.168" x2="14.478" y2="74.168" width="1.6764" layer="16"/>
 <wire x1="14.478" y1="74.168" x2="13.716" y2="74.168" width="1.6764" layer="16"/>
-<wire x1="46.6852" y1="7.3152" x2="27.180496875" y2="7.34241875" width="3.81" layer="16"/>
-<wire x1="27.180496875" y1="7.34241875" x2="22.606" y2="7.366" width="3.81" layer="16"/>
+<wire x1="46.6852" y1="7.8232" x2="27.180496875" y2="7.85041875" width="3.81" layer="16"/>
+<wire x1="27.180496875" y1="7.85041875" x2="22.606" y2="7.366" width="3.81" layer="16"/>
 <wire x1="14.478" y1="123.444" x2="6.35" y2="123.444" width="1.4224" layer="1"/>
 <via x="6.35" y="123.444" extent="1-16" drill="0.6" shape="square"/>
 <contactref element="C7" pad="2"/>
@@ -2984,7 +2990,7 @@ design rules under a new name.</description>
 <wire x1="65.278" y1="159.258" x2="29.972" y2="159.258" width="3.81" layer="16"/>
 <wire x1="64.77" y1="7.874" x2="41.91" y2="7.874" width="3.81" layer="16"/>
 <wire x1="41.91" y1="7.874" x2="27.180496875" y2="7.874" width="3.81" layer="16"/>
-<wire x1="27.180496875" y1="7.874" x2="27.180496875" y2="7.34241875" width="3.81" layer="16"/>
+<wire x1="27.180496875" y1="7.874" x2="27.180496875" y2="7.85041875" width="3.81" layer="16"/>
 <contactref element="U$8" pad="P$2"/>
 <contactref element="U$13" pad="P$2"/>
 <wire x1="41.656" y1="8.128" x2="41.91" y2="7.874" width="1.4224" layer="16"/>
@@ -3015,6 +3021,10 @@ design rules under a new name.</description>
 <wire x1="51.054" y1="28.5623" x2="51.054" y2="15.24" width="1.016" layer="1"/>
 <wire x1="51.054" y1="15.24" x2="58.42" y2="7.874" width="1.016" layer="1"/>
 <wire x1="58.42" y1="7.874" x2="64.77" y2="7.874" width="1.016" layer="1"/>
+<contactref element="GND" pad="TP"/>
+<contactref element="GND15" pad="TP"/>
+<wire x1="48.514" y1="152.213175" x2="42.672" y2="159.766" width="0" layer="19" extent="1-1"/>
+<wire x1="42.672" y1="8.128" x2="41.91" y2="7.874" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+15V">
 <contactref element="POWERGD" pad="1"/>

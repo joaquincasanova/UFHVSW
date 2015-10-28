@@ -13409,6 +13409,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R28" library="rcl" deviceset="R-US_" device="R0805" value="50"/>
 <part name="D24" library="diode" deviceset="DIODE-" device="SMB"/>
 <part name="D25" library="diode" deviceset="DIODE-" device="SMB"/>
+<part name="GND" library="testpad" deviceset="TP" device="PAD1-20Y"/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="GND15" library="testpad" deviceset="TP" device="PAD1-20Y"/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13527,6 +13531,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="R28" gate="G$1" x="33.02" y="-66.04" rot="MR0"/>
 <instance part="D24" gate="G$1" x="78.74" y="-58.42" rot="R180"/>
 <instance part="D25" gate="G$1" x="78.74" y="-81.28" rot="R180"/>
+<instance part="GND" gate="G$1" x="101.6" y="101.6" rot="MR0"/>
+<instance part="GND13" gate="1" x="101.6" y="96.52"/>
+<instance part="GND15" gate="G$1" x="114.3" y="101.6" rot="MR0"/>
+<instance part="GND16" gate="1" x="114.3" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -13587,6 +13595,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="U$13" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND" gate="G$1" pin="TP"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND15" gate="G$1" pin="TP"/>
+<pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+15V" class="0">
