@@ -12,7 +12,7 @@ mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
 //enable gate driver
 int ENSW1Pin = 9;
 
-double LVMax = 1000;
+double LVMax = 500;
 double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
@@ -26,8 +26,6 @@ void setup()
   dac.vdd(5000); // set VDD(mV) of MCP4728 for correct conversion between LSB and Vout
   dac.setVref(0, 0, 0, 0); // set to use external voltage reference (=VDD, 2.7 - 5.5V)
   int vref = dac.getVref(1); // get current voltage reference setting of channel 1
-  //Serial.print("Voltage reference setting of channel 1 = "); // serial print of value
-  //Serial.println(vref, DEC); // serial print of value
   pinMode(ENSW1Pin, OUTPUT);
 }
 
@@ -48,10 +46,7 @@ void experiment(double LV, double HV, double D) {
   LVValue = abs((int) LV / LVMax * 5000);
 
   delay(100);
-//  for(int i=0;i<max(LVValue, HVValue);i++){
-//    dac.voutWrite(PWMValue,min(LVValue,i),   0 ,min(HVValue,i));
-//  }
-  dac.voutWrite(PWMValue,  LVValue,0 ,HVValue);
+  dac.voutWrite(PWMValue, 0 ,LVValue, HVValue);
 
   digitalWrite(ENSW1Pin, HIGH);
 
@@ -66,15 +61,9 @@ void experiment(double LV, double HV, double D) {
 
 void loop() {
 
-  Serial.println("Howdy");
   dac.setVref(0, 0, 0, 0); // set to use external voltage reference (=VDD, 2.7 - 5.5V)
   int vref = dac.getVref(1); // get current voltage reference setting of channel 1
-  //Serial.print("Voltage reference setting of channel 1 = "); // serial print of value
-  //Serial.println(vref, DEC); // serial print of value
-
   int id = dac.getId(); // return devideID of object
-  //Serial.print("Device ID  = "); // serial print of value
-  //Serial.println(id, DEC); // serial print of value
   Serial.println("Duty?"); //Prompt User for Input
   while(Serial.available()==0) { // Wait for User to Input Data  
   }
@@ -91,7 +80,7 @@ void loop() {
   double HV = DV + CV;
   Serial.println("HV:");
   Serial.println(HV);
-  double LV = -DV * D/(100 - D) + CV ;
+  double LV = -DV * D/(100 - D) + CV;
   Serial.println("LV:");
   Serial.println(LV);
   delay(100);
