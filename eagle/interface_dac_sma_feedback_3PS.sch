@@ -14960,7 +14960,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply2" deviceset="+12V" device=""/>
 <part name="U$1" library="linear-technology" deviceset="LTC6992" device=""/>
-<part name="C4" library="resistor" deviceset="C-US" device="075-063X106"/>
+<part name="C4" library="resistor" deviceset="C-US" device="075-063X106" value="10n"/>
 <part name="R16" library="pot" deviceset="TRIM_US-" device="B90P"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -14998,7 +14998,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="OK2" library="optocoupler" deviceset="H11F1" device=""/>
 <part name="P+8" library="supply2" deviceset="+12V" device=""/>
 <part name="CONTROLHV" library="con-molex" deviceset="KK-156-4" device=""/>
-<part name="FDBKHV" library="con-molex" deviceset="KK-156-4" device="" value="40k"/>
+<part name="FDBKHV" library="con-molex" deviceset="KK-156-4" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="POWERINTERFACE" library="con-molex" deviceset="KK-156-4" device=""/>
@@ -15007,14 +15007,14 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="R8" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
 <part name="P-2" library="supply1" deviceset="-5V" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="resistor" deviceset="R-US_" device="0207/12"/>
-<part name="C3" library="resistor" deviceset="C-US" device="050-024X044"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="0207/12"/>
-<part name="C5" library="resistor" deviceset="C-US" device="050-024X044"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="0207/12"/>
-<part name="C6" library="resistor" deviceset="C-US" device="050-024X044"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
+<part name="C3" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
+<part name="C5" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
+<part name="C6" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
 <part name="P+14" library="supply2" deviceset="+12V" device=""/>
-<part name="C7" library="resistor" deviceset="C-US" device="050-050X075"/>
+<part name="C7" library="resistor" deviceset="C-US" device="050-050X075" value="10n"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="R10" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
 <part name="R11" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
@@ -15079,8 +15079,8 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="CONTROLHV" gate="-2" x="203.2" y="50.8"/>
 <instance part="CONTROLHV" gate="-3" x="203.2" y="15.24"/>
 <instance part="CONTROLHV" gate="-4" x="231.14" y="55.88"/>
-<instance part="FDBKHV" gate="-1" x="162.56" y="73.66"/>
-<instance part="FDBKHV" gate="-2" x="162.56" y="43.18"/>
+<instance part="FDBKHV" gate="-1" x="162.56" y="68.58"/>
+<instance part="FDBKHV" gate="-2" x="162.56" y="40.64"/>
 <instance part="FDBKHV" gate="-3" x="200.66" y="2.54"/>
 <instance part="FDBKHV" gate="-4" x="231.14" y="33.02"/>
 <instance part="GND2" gate="1" x="228.6" y="53.34"/>
@@ -15429,7 +15429,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <wire x1="160.02" y1="88.9" x2="160.02" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="FDBKHV" gate="-1" pin="S"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="78.74" x2="160.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="78.74" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <junction x="160.02" y="78.74"/>
 <pinref part="IC2" gate="A" pin="-IN"/>
 </segment>
@@ -15495,7 +15495,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <wire x1="160.02" y1="55.88" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="FDBKHV" gate="-2" pin="S"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="160.02" y1="45.72" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="45.72" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="160.02" y="45.72"/>
 <pinref part="IC2" gate="B" pin="-IN"/>
 </segment>
