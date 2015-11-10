@@ -12,7 +12,7 @@ mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
 //enable gate driver
 int ENSW1Pin = 9;
 
-double LVMax = 500;
+double LVMax = 1000;
 double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
@@ -46,7 +46,7 @@ void experiment(double LV, double HV, double D) {
   LVValue = abs((int) LV / LVMax * 5000);
 
   delay(100);
-  dac.voutWrite(PWMValue, 0 ,LVValue, HVValue);
+  dac.voutWrite(PWMValue, LVValue, 0 , HVValue);
 
   digitalWrite(ENSW1Pin, HIGH);
 

@@ -15016,8 +15016,8 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="P+14" library="supply2" deviceset="+12V" device=""/>
 <part name="C7" library="resistor" deviceset="C-US" device="050-050X075" value="10n"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="R10" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
-<part name="R11" library="resistor" deviceset="R-US_" device="0207/12" value="20k"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="0207/12" value="12"/>
 <part name="Q1" library="transistor-npn" deviceset="TIP122*" device="V"/>
 <part name="Q2" library="transistor-npn" deviceset="TIP122*" device="V"/>
