@@ -13197,6 +13197,12 @@ Based on the following previous libraries:
 <smd name="P$4" x="3.6957" y="-1.8542" dx="1.6764" dy="0.889" layer="1"/>
 <smd name="P$5" x="3.6957" y="0" dx="1.6764" dy="0.889" layer="1"/>
 <smd name="P$6" x="3.6957" y="1.8542" dx="1.6764" dy="0.889" layer="1"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="-1.27" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
+<circle x="-1.27" y="1.27" radius="1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
