@@ -53,7 +53,7 @@ void experiment(double LV, double HV, double D) {
   ///
   //actual run
   Serial.println("EXPERIMENT");
-  delay(30000);
+  delay(300000);
   ///
   reset();
   delay(10000);

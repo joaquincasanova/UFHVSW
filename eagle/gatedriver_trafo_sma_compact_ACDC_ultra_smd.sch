@@ -13243,11 +13243,11 @@ Based on the following previous libraries:
 <device name="SMD6" package="SMD6">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="2" pad="P$6"/>
+<connect gate="G$1" pin="3" pad="P$4"/>
+<connect gate="G$1" pin="4" pad="P$3"/>
 <connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="6" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
