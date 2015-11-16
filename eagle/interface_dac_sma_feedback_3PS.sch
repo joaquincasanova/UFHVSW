@@ -15018,13 +15018,14 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="R10" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
 <part name="R11" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
-<part name="R12" library="resistor" deviceset="R-US_" device="0207/12" value="12"/>
+<part name="R12" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
 <part name="Q1" library="transistor-npn" deviceset="TIP122*" device="V"/>
 <part name="Q2" library="transistor-npn" deviceset="TIP122*" device="V"/>
 <part name="Q3" library="transistor-npn" deviceset="TIP122*" device="V"/>
 <part name="IC2" library="linear-technology" deviceset="LT1352" device="PA"/>
 <part name="IC3" library="linear-technology" deviceset="LT1352" device="PA"/>
 <part name="P-3" library="supply1" deviceset="-5V" device=""/>
+<part name="R13" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -15095,7 +15096,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="P-2" gate="1" x="167.64" y="12.7"/>
 <instance part="GND18" gate="1" x="185.42" y="-17.78"/>
 <instance part="R3" gate="G$1" x="165.1" y="78.74"/>
-<instance part="C3" gate="G$1" x="177.8" y="86.36" rot="R180"/>
+<instance part="C3" gate="G$1" x="177.8" y="83.82" rot="R180"/>
 <instance part="R4" gate="G$1" x="165.1" y="45.72"/>
 <instance part="C5" gate="G$1" x="180.34" y="53.34" rot="R180"/>
 <instance part="R9" gate="G$1" x="165.1" y="7.62"/>
@@ -15114,6 +15115,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="IC3" gate="A" x="170.18" y="22.86"/>
 <instance part="IC3" gate="B" x="172.72" y="-12.7" rot="R180"/>
 <instance part="P-3" gate="1" x="167.64" y="81.28"/>
+<instance part="R13" gate="G$1" x="160.02" y="-2.54" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15437,15 +15439,12 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <net name="N$14" class="0">
 <segment>
 <wire x1="162.56" y1="-12.7" x2="160.02" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-12.7" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="2.54" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="7.62" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="2.54" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<junction x="160.02" y="7.62"/>
-<pinref part="IC3" gate="A" pin="-IN"/>
 <pinref part="IC3" gate="B" pin="OUT"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="2.54" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="2.54" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="-12.7" x2="160.02" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -15478,7 +15477,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <wire x1="193.04" y1="91.44" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="91.44" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
 <pinref part="IC2" gate="A" pin="OUT"/>
 <junction x="180.34" y="91.44"/>
@@ -15488,6 +15487,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="CONTROLHV" gate="-1" pin="S"/>
 <pinref part="Q1" gate="G$1" pin="E"/>
+<junction x="200.66" y="83.82"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -15562,7 +15562,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="78.74" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="78.74" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="78.74" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -15611,12 +15611,24 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="CONTROLHV" gate="-3" pin="S"/>
 <pinref part="Q3" gate="G$1" pin="E"/>
+<junction x="200.66" y="15.24"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="E"/>
 <pinref part="CONTROLHV" gate="-2" pin="S"/>
+<junction x="200.66" y="50.8"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="IC3" gate="A" pin="-IN"/>
+<wire x1="160.02" y1="2.54" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<junction x="160.02" y="2.54"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="2.54" x2="160.02" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

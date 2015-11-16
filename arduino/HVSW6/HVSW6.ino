@@ -46,14 +46,14 @@ void experiment(double LV, double HV, double D) {
   LVValue = abs((int) LV / LVMax * 5000);
 
   delay(100);
-  dac.voutWrite(PWMValue, LVValue, 0 , HVValue);
+  dac.voutWrite(PWMValue,LVValue,0,  HVValue );
 
   digitalWrite(ENSW1Pin, HIGH);
 
   ///
   //actual run
   Serial.println("EXPERIMENT");
-  delay(300000);
+  delay(30000);
   ///
   reset();
   delay(10000);
