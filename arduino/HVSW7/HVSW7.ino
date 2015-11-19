@@ -36,30 +36,6 @@ void reset()  {
   digitalWrite(ENSW1Pin, LOW); 
 }
 
-void experiment(double LV, double HV, double D) {
-
-  int PWMValue = 0;
-  PWMValue = ((int) (D) / (DMax) * 5000); 
-  int HVValue = 0;
-  HVValue = abs((int) HV / HVMax * 5000);
-  int LVValue = 0;
-  LVValue = abs((int) LV / LVMax * 5000);
-
-  delay(100);
-  dac.voutWrite(PWMValue,LVValue,0,  HVValue );
-
-  digitalWrite(ENSW1Pin, HIGH);
-
-  ///
-  //actual run
-  Serial.println("EXPERIMENT");
-  delay(30000);
-  ///
-  reset();
-  //cool down
-  delay(60000);
-}
-
 void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) {
 
   int PWMValue = 0;
@@ -68,8 +44,6 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   int LVValue = 0;
   double CVDelta=(CVStop-CVStart)/ScanTime*50;
   //25 ms response time of EMCO
-
-  digitalWrite(ENSW1Pin, HIGH);
   double CV=CVStart;
   //Get to start voltage
   double HV = DV + CV;
@@ -80,15 +54,21 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   Serial.println(LV); 
   if (abs(HV - LV) > 1000)  {
     Serial.println("Voltage out of range");
-    delay(10000);
+    delay(1000);
     reset();
+    return;
   } else { 
     HVValue = abs((int) HV / HVMax * 5000);
     LVValue = abs((int) LV / LVMax * 5000);
     dac.voutWrite(PWMValue,LVValue,0,  HVValue );
-    delay(30000);
     Serial.println("Stabilize");
+    delay(250);
   }
+  Serial.println("Starting in 5 seconds...");  
+  delay(5000);
+  Serial.println("GO!!!");  
+  digitalWrite(ENSW1Pin, HIGH);
+
   while(CV<=CVStop){
     double HV = DV + CV;
     Serial.println("HV:");
@@ -98,8 +78,9 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
     Serial.println(LV); 
     if (abs(HV - LV) > 1000)  {
       Serial.println("Voltage out of range");
-      delay(10000);
+      delay(1000);
       reset();
+      return;
     } else { 
       HVValue = abs((int) HV / HVMax * 5000);
       LVValue = abs((int) LV / LVMax * 5000);
