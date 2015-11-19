@@ -12,7 +12,7 @@ mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
 //enable gate driver
 int ENSW1Pin = 9;
 
-double LVMax = 500;
+double LVMax = 1000;
 double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
@@ -42,11 +42,8 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   PWMValue = ((int) (D) / (DMax) * 5000); 
   int HVValue = 0;
   int LVValue = 0;
-  int TotValue = 0;
   double CVDelta=(CVStop-CVStart)/ScanTime*50;
-  //25 ms response time of EMCO
-
-  digitalWrite(ENSW1Pin, HIGH);
+  //250 ms response time of EMCO
   double CV=CVStart;
   //Get to start voltage
   double HV = DV + CV;
@@ -57,16 +54,25 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   Serial.println(LV); 
   if (abs(HV - LV) > 1000)  {
     Serial.println("Voltage out of range");
-    delay(10000);
+    delay(1000);
     reset();
+    return;
   } else { 
     HVValue = abs((int) HV / HVMax * 5000);
     LVValue = abs((int) LV / LVMax * 5000);
-    TotValue = abs((int) (HV-LV) / HVMax * 5000);
-    dac.voutWrite(PWMValue,0, LVValue, TotValue);
-    delay(120000);
+    if (HV<0){
+      dac.voutWrite(PWMValue, HVValue, 0, LVValue);    
+    }else{
+      dac.voutWrite(PWMValue, LVValue, 0, HVValue);
+    }
     Serial.println("Stabilize");
+    delay(250);
   }
+  Serial.println("Starting in 5 seconds...");  
+  delay(5000);
+  Serial.println("GO!!!");  
+  digitalWrite(ENSW1Pin, HIGH);
+
   while(CV<=CVStop){
     double HV = DV + CV;
     Serial.println("HV:");
@@ -76,14 +82,18 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
     Serial.println(LV); 
     if (abs(HV - LV) > 1000)  {
       Serial.println("Voltage out of range");
-      delay(10000);
+      delay(1000);
       reset();
+      return;
     } else { 
       HVValue = abs((int) HV / HVMax * 5000);
       LVValue = abs((int) LV / LVMax * 5000);
-      TotValue = abs((int) (HV-LV) / HVMax * 5000);
-      dac.voutWrite(PWMValue,0, LVValue, TotValue);
-      delay(50);
+      if (HV<0){
+        dac.voutWrite(PWMValue, HVValue, 0, LVValue);    
+      }else{
+        dac.voutWrite(PWMValue, LVValue, 0, HVValue);
+      }   
+    delay(50);
     }
     CV=CV+CVDelta;
   }
