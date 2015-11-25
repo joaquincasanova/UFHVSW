@@ -47,11 +47,7 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   double CV=CVStart;
   //Get to start voltage
   double HV = DV + CV;
-  Serial.println("HV:");
-  Serial.println(HV);
   double LV = -DV * D/(100 - D) + CV;
-  Serial.println("LV:");
-  Serial.println(LV); 
   if (abs(HV - LV) > 1000)  {
     Serial.println("Voltage out of range");
     delay(1000);
@@ -69,17 +65,29 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
     delay(250);
   }
   Serial.println("Starting in 5 seconds...");  
-  delay(5000);
+  delay(1000);
+  Serial.println("Starting in 4 seconds...");  
+  delay(1000);
+  Serial.println("Starting in 3 seconds...");  
+  delay(1000);
+  Serial.println("Starting in 2 seconds...");  
+  delay(1000);
+  Serial.println("Starting in 1 seconds...");  
+  delay(1000);
   Serial.println("GO!!!");  
   digitalWrite(ENSW1Pin, HIGH);
-
+  int CVIndex = 0;
   while(CV<=CVStop){
+    if (Serial.available()!=0){
+      reset();
+      break;
+    }    
     double HV = DV + CV;
-    Serial.println("HV:");
-    Serial.println(HV);
+    if (CVIndex % 10 == 0){
+      Serial.println("CV:");
+      Serial.println(CV);
+    }
     double LV = -DV * D/(100 - D) + CV;
-    Serial.println("LV:");
-    Serial.println(LV); 
     if (abs(HV - LV) > 1000)  {
       Serial.println("Voltage out of range");
       delay(1000);
@@ -96,8 +104,8 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
     delay(50);
     }
     CV=CV+CVDelta;
-  }
-  
+    CVIndex++;
+    }
   reset();
   //cool down
   delay(60000);
@@ -111,22 +119,35 @@ void loop() {
   while(Serial.available()==0) { // Wait for User to Input Data  
   }
   double D=Serial.parseFloat();  //Read the data the user has input
+  Serial.println(D); 
   Serial.println("DV?"); //Prompt User for Input
   while(Serial.available()==0) { // Wait for User to Input Data  
   }
   double DV=Serial.parseFloat();  //Read the data the user has input
+  Serial.println(DV); 
   Serial.println("CV start?"); //Prompt User for Input
   while(Serial.available()==0) { // Wait for User to Input Data  
   }
   double CVStart=Serial.parseFloat();  //Read the data the user has input
+  Serial.println(CVStart); 
   Serial.println("CV stop?"); //Prompt User for Input
   while(Serial.available()==0) { // Wait for User to Input Data  
   }
   double CVStop=Serial.parseFloat();  //Read the data the user has input
+  Serial.println(CVStop); 
   Serial.println("Scan Duration?"); //Prompt User for Input
   while(Serial.available()==0) { // Wait for User to Input Data  
   }
   double ScanTime=1000*Serial.parseFloat();  //Read the data the user has input
+  Serial.println(ScanTime/1000); 
 
-  scan(DV, D, CVStart, CVStop, ScanTime);
+  Serial.println("Confirm? (y/n)"); //Prompt User for Input
+  while(Serial.available()==0) { // Wait for User to Input Data  
+  }   
+  if (Serial.read() == 'y' ||Serial.read() == 'Y'){
+    scan(DV, D, CVStart, CVStop, ScanTime);
+  } else{
+    reset();
+  }
+  
 }

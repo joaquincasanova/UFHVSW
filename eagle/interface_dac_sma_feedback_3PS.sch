@@ -15172,9 +15172,9 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <instance part="HVRDOUT+" gate="-1" x="124.46" y="139.7" rot="R90"/>
 <instance part="HVRDOUT+" gate="-2" x="127" y="139.7" rot="R90"/>
 <instance part="HVRDOUT+" gate="-3" x="129.54" y="139.7" rot="R90"/>
-<instance part="HVRDOUTCT" gate="-1" x="154.94" y="139.7" rot="R90"/>
-<instance part="HVRDOUTCT" gate="-2" x="157.48" y="139.7" rot="R90"/>
-<instance part="HVRDOUTCT" gate="-3" x="160.02" y="139.7" rot="R90"/>
+<instance part="HVRDOUTCT" gate="-1" x="154.94" y="142.24" rot="R90"/>
+<instance part="HVRDOUTCT" gate="-2" x="157.48" y="142.24" rot="R90"/>
+<instance part="HVRDOUTCT" gate="-3" x="160.02" y="142.24" rot="R90"/>
 <instance part="HVRDOUT-" gate="-1" x="177.8" y="139.7" rot="R90"/>
 <instance part="HVRDOUT-" gate="-2" x="180.34" y="139.7" rot="R90"/>
 <instance part="HVRDOUT-" gate="-3" x="182.88" y="139.7" rot="R90"/>
@@ -15278,6 +15278,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="HVRDOUTCT" gate="-3" pin="S"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="160.02" y1="139.7" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="HVRDOUT-" gate="-3" pin="S"/>
@@ -15498,6 +15499,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <segment>
 <pinref part="HVRDOUTCT" gate="-1" pin="S"/>
 <pinref part="P+13" gate="+12V" pin="+12V"/>
+<wire x1="154.94" y1="139.7" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="HVRDOUT-" gate="-1" pin="S"/>
@@ -15529,6 +15531,7 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 </segment>
 <segment>
 <wire x1="127" y1="137.16" x2="127" y2="127" width="0.1524" layer="91"/>
+<pinref part="HVRDOUT+" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15599,7 +15602,8 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <pinref part="IC2" gate="B" pin="-IN"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="137.16" x2="157.48" y2="127" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="139.7" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="HVRDOUTCT" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="N$10" class="0">
