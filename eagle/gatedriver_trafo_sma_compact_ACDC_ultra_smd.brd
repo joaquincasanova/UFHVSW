@@ -126,6 +126,7 @@
 <hole x="95.25" y="6.35" drill="3.7973"/>
 <hole x="6.858" y="4.572" drill="3.7973"/>
 <hole x="5.842" y="159.258" drill="3.7973"/>
+<text x="2.032" y="40.386" size="1.778" layer="21">Requires conformal coating</text>
 </plain>
 <libraries>
 <library name="resistor">
@@ -2859,10 +2860,10 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="23.368" y="154.686" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="23.368" y="154.686" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C1" library="resistor" package="C0805" value=".22u" x="58.166" y="120.396"/>
-<element name="C3" library="resistor" package="C0805" value=".22u" x="40.132" y="147.828"/>
+<element name="C1" library="resistor" package="C0805" value="1u" x="58.166" y="120.396"/>
+<element name="C3" library="resistor" package="C0805" value="1u" x="40.132" y="147.828"/>
 <element name="U$3" library="texas" package="DIL08" value="UCC27425" x="18.288" y="75.438" rot="R270"/>
-<element name="C4" library="resistor" package="C0805" value=".22u" x="38.862" y="28.448"/>
+<element name="C4" library="resistor" package="C0805" value="1u" x="38.862" y="28.448"/>
 <element name="K1" library="relay" package="G5V-2" value="G5V-2" x="18.288" y="127.254" rot="R270">
 <attribute name="OC_NEWARK" value="78K5703" x="18.288" y="127.254" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="G5V-2 5DC" x="18.288" y="127.254" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2871,14 +2872,14 @@ design rules under a new name.</description>
 </element>
 <element name="D11" library="diode" package="DO35-10" value="1N4148DO35-10" x="18.288" y="144.018"/>
 <element name="U$1" library="trafo" package="SMD6" value="DA-2320SMD6" x="52.324" y="144.272" rot="R90"/>
-<element name="C5" library="resistor" package="C0805" value=".22u" x="58.166" y="139.446"/>
+<element name="C5" library="resistor" package="C0805" value="1u" x="58.166" y="139.446"/>
 <element name="R4" library="rcl" package="R2512" value="10M" x="84.328" y="146.05" rot="R270"/>
 <element name="R7" library="rcl" package="R2512" value="10M" x="84.074" y="127.254" rot="R270"/>
-<element name="C2" library="resistor" package="C0805" value=".22u" x="56.642" y="35.814"/>
+<element name="C2" library="resistor" package="C0805" value="1u" x="56.642" y="35.814"/>
 <element name="U$2" library="transistor-fet" package="SOT89-BCE" value="VN2450" x="77.216" y="33.274" rot="R180"/>
 <element name="U$6" library="transistor-fet" package="SOT89-BCE" value="VN2450" x="76.962" y="16.764" rot="R180"/>
 <element name="U$7" library="trafo" package="SMD6" value="DA-2320SMD6" x="51.054" y="32.258" rot="R90"/>
-<element name="C6" library="resistor" package="C0805" value=".22u" x="56.642" y="20.32"/>
+<element name="C6" library="resistor" package="C0805" value="1u" x="56.642" y="20.32"/>
 <element name="R10" library="rcl" package="R2512" value="10M" x="83.82" y="34.798" rot="R90"/>
 <element name="R11" library="rcl" package="R2512" value="10M" x="83.82" y="17.78" rot="R90"/>
 <element name="D1" library="diode" package="DO214AA" value="SMBJ170D-M3/H" x="93.218" y="137.668" rot="R270"/>
@@ -2903,8 +2904,8 @@ design rules under a new name.</description>
 <element name="R8" library="rcl" package="R0805" value="10" x="67.056" y="134.62"/>
 <element name="R9" library="rcl" package="R0805" value="10" x="66.802" y="42.672"/>
 <element name="R12" library="rcl" package="R0805" value="10" x="66.802" y="26.67"/>
-<element name="R13" library="rcl" package="R0805" value="50" x="45.212" y="147.828" rot="R180"/>
-<element name="R14" library="rcl" package="R0805" value="50" x="44.958" y="28.448" rot="R180"/>
+<element name="R13" library="rcl" package="R0805" value="10" x="45.212" y="147.828" rot="R180"/>
+<element name="R14" library="rcl" package="R0805" value="10" x="44.958" y="28.448" rot="R180"/>
 <element name="C8" library="resistor" package="C102-064X133" value="10p" x="70.358" y="159.258" rot="R180"/>
 <element name="HV2" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="87.884" y="7.874">
 <attribute name="TP_SIGNAL_NAME" value="" x="87.884" y="7.874" size="1.778" layer="27" display="off"/>
@@ -2917,10 +2918,10 @@ design rules under a new name.</description>
 <element name="OUT" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="98.298" y="81.28">
 <attribute name="TP_SIGNAL_NAME" value="" x="74.676" y="92.964" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C10" library="resistor" package="C0805" value=".22u" x="58.166" y="84.836"/>
-<element name="C11" library="resistor" package="C0805" value=".22u" x="40.132" y="113.284"/>
+<element name="C10" library="resistor" package="C0805" value="1u" x="58.166" y="84.836"/>
+<element name="C11" library="resistor" package="C0805" value="1u" x="40.132" y="113.284"/>
 <element name="U$8" library="trafo" package="SMD6" value="DA-2320SMD6" x="52.324" y="109.474" rot="R90"/>
-<element name="C12" library="resistor" package="C0805" value=".22u" x="57.912" y="102.108"/>
+<element name="C12" library="resistor" package="C0805" value="1u" x="57.912" y="102.108"/>
 <element name="R15" library="rcl" package="R2512" value="10M" x="84.074" y="110.236" rot="R90"/>
 <element name="R16" library="rcl" package="R2512" value="10M" x="84.074" y="90.678" rot="R90"/>
 <element name="D13" library="diode" package="DO214AA" value="SMBJ170D-M3/H" x="93.218" y="107.188" rot="R270"/>
@@ -2933,15 +2934,15 @@ design rules under a new name.</description>
 <element name="R18" library="rcl" package="R0805" value="100k" x="70.358" y="109.728" rot="R90"/>
 <element name="R19" library="rcl" package="R0805" value="10" x="67.31" y="80.01"/>
 <element name="R20" library="rcl" package="R0805" value="10" x="66.802" y="97.79"/>
-<element name="R21" library="rcl" package="R0805" value="50" x="46.228" y="113.284" rot="R180"/>
+<element name="R21" library="rcl" package="R0805" value="1u" x="46.228" y="113.284" rot="R180"/>
 <element name="D18" library="diode" package="SMB" value="" x="67.31" y="84.836" rot="R180"/>
 <element name="D19" library="diode" package="SMB" value="" x="67.056" y="102.108" rot="R180"/>
-<element name="C14" library="resistor" package="C0805" value=".22u" x="38.862" y="62.484"/>
-<element name="C15" library="resistor" package="C0805" value=".22u" x="57.658" y="69.85"/>
+<element name="C14" library="resistor" package="C0805" value="1u" x="38.862" y="62.484"/>
+<element name="C15" library="resistor" package="C0805" value="1u" x="57.658" y="69.85"/>
 <element name="U$11" library="transistor-fet" package="SOT89-BCE" value="VN2450" x="76.962" y="66.294" rot="R180"/>
 <element name="U$12" library="transistor-fet" package="SOT89-BCE" value="VN2450" x="77.216" y="48.768" rot="R180"/>
 <element name="U$13" library="trafo" package="SMD6" value="DA-2320SMD6" x="51.054" y="66.04" rot="R90"/>
-<element name="C16" library="resistor" package="C0805" value=".22u" x="57.15" y="54.61"/>
+<element name="C16" library="resistor" package="C0805" value="1u" x="57.15" y="54.61"/>
 <element name="R22" library="rcl" package="R2512" value="10M" x="84.074" y="67.564" rot="R90"/>
 <element name="R23" library="rcl" package="R2512" value="10M" x="83.82" y="50.546" rot="R90"/>
 <element name="D20" library="diode" package="DO214AA" value="SMBJ170D-M3/H" x="93.472" y="54.102" rot="R270"/>
@@ -2952,7 +2953,7 @@ design rules under a new name.</description>
 <element name="R25" library="rcl" package="R0805" value="100k" x="71.628" y="48.514" rot="R270"/>
 <element name="R26" library="rcl" package="R0805" value="10" x="67.31" y="74.676"/>
 <element name="R27" library="rcl" package="R0805" value="10" x="67.31" y="58.674"/>
-<element name="R28" library="rcl" package="R0805" value="50" x="44.704" y="62.484" rot="R180"/>
+<element name="R28" library="rcl" package="R0805" value="10" x="44.704" y="62.484" rot="R180"/>
 <element name="D24" library="diode" package="SMB" value="" x="66.802" y="70.612"/>
 <element name="D25" library="diode" package="SMB" value="" x="67.056" y="54.61"/>
 <element name="GND" library="testpad" package="P1-20Y" value="TPPAD1-20Y" x="42.672" y="8.128">
