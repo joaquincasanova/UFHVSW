@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -11920,24 +11920,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <text x="-8.44" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="9.71" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="KK-156-3">
-<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
-<wire x1="5.79" y1="4.95" x2="3.99" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="3.99" y1="4.95" x2="-3.965" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-3.965" y1="4.95" x2="-5.765" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-5.765" y1="4.95" x2="-5.765" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="-5.765" y1="-4.825" x2="5.79" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="5.79" y1="-4.825" x2="5.79" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-3.965" y1="2.525" x2="3.99" y2="2.525" width="0.2032" layer="21"/>
-<wire x1="3.99" y1="2.525" x2="3.99" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-3.965" y1="2.525" x2="-3.965" y2="4.95" width="0.2032" layer="21"/>
-<pad name="1" x="-3.96" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="3" x="3.96" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<text x="-6.46" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="7.73" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -11993,32 +11975,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <connect gate="-2" pin="S" pad="2"/>
 <connect gate="-3" pin="S" pad="3"/>
 <connect gate="-4" pin="S" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="KK-156-3" prefix="X" uservalue="yes">
-<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-<gate name="-3" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="KK-156-3">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-<connect gate="-3" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -14783,6 +14739,45 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
+<package name="VSOP-10">
+<smd name="ADDR" x="-2.2" y="1" dx="1.45" dy="0.3" layer="1"/>
+<smd name="ALERT" x="-2.2" y="0.5" dx="1.45" dy="0.3" layer="1"/>
+<smd name="GND" x="-2.2" y="0" dx="1.45" dy="0.3" layer="1"/>
+<smd name="AIN0" x="-2.2" y="-0.5" dx="1.45" dy="0.3" layer="1"/>
+<smd name="AIN1" x="-2.2" y="-1" dx="1.45" dy="0.3" layer="1"/>
+<smd name="AIN2" x="2.2" y="-1" dx="1.45" dy="0.3" layer="1"/>
+<smd name="AIN3" x="2.2" y="-0.5" dx="1.45" dy="0.3" layer="1"/>
+<smd name="VDD" x="2.2" y="0" dx="1.45" dy="0.3" layer="1"/>
+<smd name="SDA" x="2.2" y="0.5" dx="1.45" dy="0.3" layer="1"/>
+<smd name="SCL" x="2.2" y="1" dx="1.45" dy="0.3" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="1.6" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.5" x2="1.6" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<circle x="-1.1" y="1.2" radius="0.14141875" width="0.127" layer="21"/>
+<text x="-3" y="1.9" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="DIL10">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="6.35" y1="2.921" x2="-6.35" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-2.921" x2="6.35" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="2.921" x2="6.35" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="2.921" x2="-6.35" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-2.921" x2="-6.35" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="1.016" x2="-6.35" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="0" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="0" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="-2.54" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="-5.08" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-6.604" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-4.953" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ISO1540">
@@ -14803,6 +14798,23 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <pin name="GND2" x="12.7" y="-5.08" length="short" direction="in" rot="R180"/>
 <pin name="VCC1" x="-12.7" y="2.54" length="short" direction="in"/>
 <pin name="VCC2" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
+</symbol>
+<symbol name="ADS1015">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="ADDR" x="-17.78" y="10.16" length="middle"/>
+<pin name="ALERT" x="-17.78" y="5.08" length="middle"/>
+<pin name="GND" x="-17.78" y="0" length="middle"/>
+<pin name="AIN0" x="-17.78" y="-5.08" length="middle"/>
+<pin name="AIN1" x="-17.78" y="-10.16" length="middle"/>
+<pin name="AIN2" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="AIN3" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="SCL" x="17.78" y="10.16" length="middle" rot="R180"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14838,6 +14850,47 @@ Source: http://focus.ti.com/lit/ds/symlink/iso1050.pdf</description>
 <connect gate="G$1" pin="SDA2" pad="7"/>
 <connect gate="G$1" pin="VCC1" pad="1"/>
 <connect gate="G$1" pin="VCC2" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS1015">
+<gates>
+<gate name="G$1" symbol="ADS1015" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VSOP-10">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="ADDR"/>
+<connect gate="G$1" pin="AIN0" pad="AIN0"/>
+<connect gate="G$1" pin="AIN1" pad="AIN1"/>
+<connect gate="G$1" pin="AIN2" pad="AIN2"/>
+<connect gate="G$1" pin="AIN3" pad="AIN3"/>
+<connect gate="G$1" pin="ALERT" pad="ALERT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DIL" package="DIL10">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="1"/>
+<connect gate="G$1" pin="AIN0" pad="4"/>
+<connect gate="G$1" pin="AIN1" pad="5"/>
+<connect gate="G$1" pin="AIN2" pad="6"/>
+<connect gate="G$1" pin="AIN3" pad="7"/>
+<connect gate="G$1" pin="ALERT" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="10"/>
+<connect gate="G$1" pin="SDA" pad="9"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15291,8 +15344,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply2" deviceset="+12V" device=""/>
-<part name="U$1" library="linear-technology" deviceset="LTC6992" device=""/>
-<part name="C4" library="resistor" deviceset="C-US" device="075-063X106" value="10n"/>
+<part name="U$1" library="linear-technology" deviceset="LTC6992" device="" value="LTC6992"/>
+<part name="C4" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
 <part name="R16" library="pot" deviceset="TRIM_US-" device="B90P"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -15315,14 +15368,14 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+11" library="supply2" deviceset="+12V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="IC1" library="texas" deviceset="ISO1540" device=""/>
+<part name="IC1" library="texas" deviceset="ISO1540" device="" value="ISO1540"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="0207/12" value="1.5k"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="0207/12" value="1.5k"/>
 <part name="P+3" library="supply2" deviceset="+12V" device=""/>
 <part name="P+12" library="supply2" deviceset="+12V" device=""/>
-<part name="C1" library="rcl" deviceset="C-US" device="050-050X075"/>
+<part name="C1" library="rcl" deviceset="C-US" device="050-024X044"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
@@ -15346,7 +15399,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="R9" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
 <part name="C6" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
 <part name="P+14" library="supply2" deviceset="+12V" device=""/>
-<part name="C7" library="resistor" deviceset="C-US" device="050-050X075" value="10n"/>
+<part name="C7" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="R10" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
 <part name="R11" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
@@ -15358,15 +15411,6 @@ DIN A4, landscape with location and doc. field</description>
 <part name="IC3" library="linear-technology" deviceset="LT1352" device="PA"/>
 <part name="P-3" library="supply1" deviceset="-5V" device=""/>
 <part name="R13" library="resistor" deviceset="R-US_" device="0207/12" value="10k"/>
-<part name="HVRDOUT+" library="con-molex" deviceset="KK-156-3" device=""/>
-<part name="HVRDOUTCT" library="con-molex" deviceset="KK-156-3" device=""/>
-<part name="HVRDOUT-" library="con-molex" deviceset="KK-156-3" device=""/>
-<part name="P+4" library="supply2" deviceset="+12V" device=""/>
-<part name="P+13" library="supply2" deviceset="+12V" device=""/>
-<part name="P+15" library="supply2" deviceset="+12V" device=""/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="IC4" library="v-reg" deviceset="LM317?*" device="" technology="MABDT"/>
 <part name="IC5" library="v-reg" deviceset="LM317?*" device="" technology="MABDT"/>
 <part name="IC6" library="v-reg" deviceset="LM317?*" device="" technology="MABDT"/>
@@ -15374,6 +15418,10 @@ DIN A4, landscape with location and doc. field</description>
 <part name="P+17" library="supply2" deviceset="+12V" device=""/>
 <part name="P+18" library="supply2" deviceset="+12V" device=""/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="U$3" library="texas" deviceset="ADS1015" device="DIL" value="ADS1015DIL"/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15384,9 +15432,9 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 </plain>
 <instances>
 <instance part="PCB1" gate="G$1" x="327.66" y="12.7"/>
-<instance part="P+5" gate="VCC" x="370.84" y="-33.02"/>
-<instance part="GND4" gate="1" x="368.3" y="-38.1" rot="R270"/>
-<instance part="P+2" gate="+12V" x="370.84" y="-30.48"/>
+<instance part="P+5" gate="VCC" x="304.8" y="-66.04"/>
+<instance part="GND4" gate="1" x="302.26" y="-71.12" rot="R270"/>
+<instance part="P+2" gate="+12V" x="304.8" y="-63.5"/>
 <instance part="U$1" gate="G$1" x="520.7" y="38.1"/>
 <instance part="C4" gate="G$1" x="309.88" y="-93.98"/>
 <instance part="R16" gate="G$1" x="508" y="30.48"/>
@@ -15412,11 +15460,11 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <instance part="GND9" gate="1" x="459.74" y="35.56"/>
 <instance part="P+11" gate="+12V" x="449.58" y="-38.1"/>
 <instance part="GND8" gate="1" x="381" y="2.54" rot="R270"/>
-<instance part="IC1" gate="G$1" x="327.66" y="-40.64"/>
-<instance part="GND23" gate="1" x="342.9" y="-45.72" rot="R90"/>
-<instance part="P+6" gate="VCC" x="340.36" y="-27.94"/>
-<instance part="R1" gate="G$1" x="347.98" y="-35.56" rot="R90"/>
-<instance part="R2" gate="G$1" x="355.6" y="-38.1" rot="R90"/>
+<instance part="IC1" gate="G$1" x="378.46" y="-48.26"/>
+<instance part="GND23" gate="1" x="393.7" y="-53.34" rot="R90"/>
+<instance part="P+6" gate="VCC" x="391.16" y="-35.56"/>
+<instance part="R1" gate="G$1" x="398.78" y="-43.18" rot="R90"/>
+<instance part="R2" gate="G$1" x="406.4" y="-45.72" rot="R90"/>
 <instance part="P+3" gate="+12V" x="482.6" y="30.48"/>
 <instance part="P+12" gate="+12V" x="482.6" y="-38.1"/>
 <instance part="C1" gate="G$1" x="386.08" y="35.56" rot="R180"/>
@@ -15436,11 +15484,11 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <instance part="FDBKHV" gate="-4" x="528.32" y="-40.64"/>
 <instance part="GND2" gate="1" x="525.78" y="-30.48"/>
 <instance part="GND6" gate="1" x="525.78" y="-45.72"/>
-<instance part="POWERINTERFACE" gate="-1" x="378.46" y="-33.02"/>
-<instance part="POWERINTERFACE" gate="-2" x="378.46" y="-35.56"/>
-<instance part="POWERINTERFACE" gate="-3" x="378.46" y="-38.1"/>
-<instance part="POWERINTERFACE" gate="-4" x="378.46" y="-40.64"/>
-<instance part="P-1" gate="1" x="375.92" y="-43.18"/>
+<instance part="POWERINTERFACE" gate="-1" x="312.42" y="-66.04"/>
+<instance part="POWERINTERFACE" gate="-2" x="312.42" y="-68.58"/>
+<instance part="POWERINTERFACE" gate="-3" x="312.42" y="-71.12"/>
+<instance part="POWERINTERFACE" gate="-4" x="312.42" y="-73.66"/>
+<instance part="P-1" gate="1" x="309.88" y="-76.2"/>
 <instance part="R5" gate="G$1" x="474.98" y="-68.58" rot="R180"/>
 <instance part="R8" gate="G$1" x="452.12" y="-68.58" rot="R180"/>
 <instance part="P-2" gate="1" x="449.58" y="-58.42"/>
@@ -15451,9 +15499,9 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <instance part="C5" gate="G$1" x="462.28" y="-17.78" rot="R180"/>
 <instance part="R9" gate="G$1" x="447.04" y="-63.5"/>
 <instance part="C6" gate="G$1" x="462.28" y="-60.96" rot="R180"/>
-<instance part="P+14" gate="+12V" x="370.84" y="-58.42"/>
-<instance part="C7" gate="G$1" x="370.84" y="-63.5"/>
-<instance part="GND20" gate="1" x="370.84" y="-71.12"/>
+<instance part="P+14" gate="+12V" x="317.5" y="-88.9"/>
+<instance part="C7" gate="G$1" x="317.5" y="-93.98"/>
+<instance part="GND20" gate="1" x="317.5" y="-101.6"/>
 <instance part="R10" gate="G$1" x="429.26" y="22.86"/>
 <instance part="R11" gate="G$1" x="429.26" y="12.7"/>
 <instance part="R12" gate="G$1" x="426.72" y="2.54"/>
@@ -15466,21 +15514,6 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <instance part="IC3" gate="B" x="454.66" y="-83.82" rot="R180"/>
 <instance part="P-3" gate="1" x="449.58" y="10.16"/>
 <instance part="R13" gate="G$1" x="441.96" y="-73.66" rot="R90"/>
-<instance part="HVRDOUT+" gate="-1" x="345.44" y="-96.52" rot="R90"/>
-<instance part="HVRDOUT+" gate="-2" x="347.98" y="-96.52" rot="R90"/>
-<instance part="HVRDOUT+" gate="-3" x="350.52" y="-96.52" rot="R90"/>
-<instance part="HVRDOUTCT" gate="-1" x="375.92" y="-93.98" rot="R90"/>
-<instance part="HVRDOUTCT" gate="-2" x="378.46" y="-93.98" rot="R90"/>
-<instance part="HVRDOUTCT" gate="-3" x="381" y="-93.98" rot="R90"/>
-<instance part="HVRDOUT-" gate="-1" x="398.78" y="-96.52" rot="R90"/>
-<instance part="HVRDOUT-" gate="-2" x="401.32" y="-96.52" rot="R90"/>
-<instance part="HVRDOUT-" gate="-3" x="403.86" y="-96.52" rot="R90"/>
-<instance part="P+4" gate="+12V" x="345.44" y="-101.6" rot="R180"/>
-<instance part="P+13" gate="+12V" x="375.92" y="-101.6" rot="R180"/>
-<instance part="P+15" gate="+12V" x="398.78" y="-101.6" rot="R180"/>
-<instance part="GND10" gate="1" x="350.52" y="-101.6"/>
-<instance part="GND12" gate="1" x="381" y="-101.6"/>
-<instance part="GND19" gate="1" x="403.86" y="-101.6"/>
 <instance part="IC4" gate="G$1" x="495.3" y="20.32" rot="R270"/>
 <instance part="IC5" gate="G$1" x="495.3" y="-12.7" rot="R270"/>
 <instance part="IC6" gate="G$1" x="495.3" y="-48.26" rot="R270"/>
@@ -15488,13 +15521,17 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <instance part="P+17" gate="+12V" x="495.3" y="-2.54"/>
 <instance part="P+18" gate="+12V" x="495.3" y="-38.1"/>
 <instance part="FRAME1" gate="G$1" x="292.1" y="-119.38"/>
+<instance part="U$3" gate="G$1" x="375.92" y="-86.36"/>
+<instance part="GND10" gate="1" x="350.52" y="-86.36" rot="R270"/>
+<instance part="P+4" gate="VCC" x="401.32" y="-86.36" rot="R270"/>
+<instance part="GND12" gate="1" x="350.52" y="-76.2" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="375.92" y1="-38.1" x2="370.84" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="-71.12" x2="304.8" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="POWERINTERFACE" gate="-3" pin="S"/>
 </segment>
@@ -15578,17 +15615,14 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="IC3" gate="B" pin="+IN"/>
 </segment>
 <segment>
-<pinref part="HVRDOUT+" gate="-3" pin="S"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="353.06" y1="-86.36" x2="358.14" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HVRDOUTCT" gate="-3" pin="S"/>
+<pinref part="U$3" gate="G$1" pin="ADDR"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="381" y1="-96.52" x2="381" y2="-99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="HVRDOUT-" gate="-3" pin="S"/>
-<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="353.06" y1="-76.2" x2="358.14" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -15623,7 +15657,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="375.92" y1="-35.56" x2="370.84" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="-68.58" x2="304.8" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <pinref part="POWERINTERFACE" gate="-2" pin="S"/>
 </segment>
@@ -15648,12 +15682,17 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC2"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="340.36" y1="-30.48" x2="340.36" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="-38.1" x2="391.16" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="340.36" y1="-30.48" x2="347.98" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="-30.48" x2="355.6" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="-38.1" x2="398.78" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="-38.1" x2="406.4" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="355.6" y1="-30.48" x2="355.6" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="-38.1" x2="406.4" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VDD"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="398.78" y1="-86.36" x2="393.7" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D11" class="0">
@@ -15672,7 +15711,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="342.9" y1="-5.08" x2="342.9" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="309.88" y1="-45.72" x2="314.96" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="-53.34" x2="365.76" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND1"/>
 </segment>
 </net>
@@ -15682,7 +15721,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="337.82" y1="-5.08" x2="337.82" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="309.88" y1="-38.1" x2="314.96" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="-45.72" x2="365.76" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VCC1"/>
 </segment>
 </net>
@@ -15698,7 +15737,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="335.28" y1="27.94" x2="335.28" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="314.96" y1="-40.64" x2="309.88" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="-48.26" x2="360.68" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="SDA1"/>
 </segment>
 </net>
@@ -15738,7 +15777,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="332.74" y1="27.94" x2="332.74" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="314.96" y1="-43.18" x2="309.88" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="-50.8" x2="360.68" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="SCL1"/>
 </segment>
 </net>
@@ -15748,9 +15787,13 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="U$2" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
-<wire x1="347.98" y1="-40.64" x2="340.36" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="-48.26" x2="391.16" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="SDA2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="SDA"/>
+<wire x1="393.7" y1="-81.28" x2="401.32" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL_OUT" class="0">
@@ -15761,13 +15804,17 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SCL2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="340.36" y1="-43.18" x2="355.6" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="-50.8" x2="406.4" y2="-50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="SCL"/>
+<wire x1="393.7" y1="-76.2" x2="401.32" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
 <segment>
 <pinref part="P+2" gate="+12V" pin="+12V"/>
-<wire x1="370.84" y1="-33.02" x2="375.92" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="-66.04" x2="309.88" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="POWERINTERFACE" gate="-1" pin="S"/>
 </segment>
 <segment>
@@ -15798,19 +15845,6 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="IC3" gate="A" pin="V+"/>
 </segment>
 <segment>
-<pinref part="HVRDOUT+" gate="-1" pin="S"/>
-<pinref part="P+4" gate="+12V" pin="+12V"/>
-</segment>
-<segment>
-<pinref part="HVRDOUTCT" gate="-1" pin="S"/>
-<pinref part="P+13" gate="+12V" pin="+12V"/>
-<wire x1="375.92" y1="-96.52" x2="375.92" y2="-99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="HVRDOUT-" gate="-1" pin="S"/>
-<pinref part="P+15" gate="+12V" pin="+12V"/>
-</segment>
-<segment>
 <pinref part="IC4" gate="G$1" pin="IN"/>
 <pinref part="P+16" gate="+12V" pin="+12V"/>
 </segment>
@@ -15829,15 +15863,8 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="449.58" y1="48.26" x2="459.74" y2="48.26" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
-<wire x1="508" y1="48.26" x2="469.9" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="469.9" y1="48.26" x2="459.74" y2="48.26" width="0.1524" layer="91"/>
-<junction x="469.9" y="48.26"/>
-</segment>
 </net>
-<net name="N$8" class="0">
+<net name="RDBK1" class="0">
 <segment>
 <wire x1="441.96" y1="17.78" x2="441.96" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="FDBKHV" gate="-1" pin="S"/>
@@ -15847,8 +15874,8 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="IC2" gate="A" pin="-IN"/>
 </segment>
 <segment>
-<wire x1="347.98" y1="-99.06" x2="347.98" y2="-106.68" width="0.1524" layer="91"/>
-<pinref part="HVRDOUT+" gate="-2" pin="S"/>
+<pinref part="U$3" gate="G$1" pin="AIN0"/>
+<wire x1="358.14" y1="-91.44" x2="347.98" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15860,10 +15887,6 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="444.5" y1="-68.58" x2="444.5" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="441.96" y1="-83.82" x2="441.96" y2="-78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="HVRDOUT-" gate="-2" pin="S"/>
-<wire x1="401.32" y1="-99.06" x2="401.32" y2="-101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -15913,7 +15936,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <junction x="495.3" y="12.7"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="RDBK2" class="0">
 <segment>
 <wire x1="441.96" y1="-15.24" x2="441.96" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="FDBKHV" gate="-2" pin="S"/>
@@ -15923,8 +15946,8 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="IC2" gate="B" pin="-IN"/>
 </segment>
 <segment>
-<wire x1="378.46" y1="-96.52" x2="378.46" y2="-106.68" width="0.1524" layer="91"/>
-<pinref part="HVRDOUTCT" gate="-2" pin="S"/>
+<pinref part="U$3" gate="G$1" pin="AIN1"/>
+<wire x1="358.14" y1="-96.52" x2="347.98" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -16056,7 +16079,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <junction x="495.3" y="-20.32"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="RDBK3" class="0">
 <segment>
 <pinref part="IC3" gate="A" pin="-IN"/>
 <wire x1="441.96" y1="-68.58" x2="441.96" y2="-50.8" width="0.1524" layer="91"/>
@@ -16064,6 +16087,23 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <junction x="441.96" y="-68.58"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="441.96" y1="-68.58" x2="441.96" y2="-63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="AIN2"/>
+<wire x1="393.7" y1="-96.52" x2="401.32" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RDBK4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<wire x1="508" y1="48.26" x2="469.9" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="469.9" y1="48.26" x2="459.74" y2="48.26" width="0.1524" layer="91"/>
+<junction x="469.9" y="48.26"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="AIN3"/>
+<wire x1="393.7" y1="-91.44" x2="401.32" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
