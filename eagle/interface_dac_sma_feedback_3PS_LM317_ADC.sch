@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -15346,7 +15346,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="P+2" library="supply2" deviceset="+12V" device=""/>
 <part name="U$1" library="linear-technology" deviceset="LTC6992" device="" value="LTC6992"/>
 <part name="C4" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
-<part name="R16" library="pot" deviceset="TRIM_US-" device="B90P"/>
+<part name="R16" library="pot" deviceset="TRIM_US-" device="B90P" value="100k"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -15375,7 +15375,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="R2" library="resistor" deviceset="R-US_" device="0207/12" value="1.5k"/>
 <part name="P+3" library="supply2" deviceset="+12V" device=""/>
 <part name="P+12" library="supply2" deviceset="+12V" device=""/>
-<part name="C1" library="rcl" deviceset="C-US" device="050-024X044"/>
+<part name="C1" library="rcl" deviceset="C-US" device="050-024X044" value="10n"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="resistor" deviceset="C-US" device="050-024X044" value="10n"/>
@@ -15432,8 +15432,8 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 </plain>
 <instances>
 <instance part="PCB1" gate="G$1" x="327.66" y="12.7"/>
-<instance part="P+5" gate="VCC" x="304.8" y="-66.04"/>
-<instance part="GND4" gate="1" x="302.26" y="-71.12" rot="R270"/>
+<instance part="P+5" gate="VCC" x="302.26" y="-66.04"/>
+<instance part="GND4" gate="1" x="299.72" y="-71.12" rot="R270"/>
 <instance part="P+2" gate="+12V" x="304.8" y="-63.5"/>
 <instance part="U$1" gate="G$1" x="520.7" y="38.1"/>
 <instance part="C4" gate="G$1" x="309.88" y="-93.98"/>
@@ -15531,7 +15531,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="309.88" y1="-71.12" x2="304.8" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="-71.12" x2="302.26" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="POWERINTERFACE" gate="-3" pin="S"/>
 </segment>
@@ -15657,7 +15657,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="309.88" y1="-68.58" x2="304.8" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="-68.58" x2="302.26" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <pinref part="POWERINTERFACE" gate="-2" pin="S"/>
 </segment>
@@ -15670,6 +15670,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
 <wire x1="309.88" y1="-86.36" x2="309.88" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="-83.82" x2="309.88" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="309.88" y="-86.36"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VDD"/>
@@ -15688,6 +15689,8 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="398.78" y1="-38.1" x2="406.4" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="406.4" y1="-38.1" x2="406.4" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="391.16" y="-38.1"/>
+<junction x="398.78" y="-38.1"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VDD"/>
@@ -15739,6 +15742,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <segment>
 <wire x1="365.76" y1="-48.26" x2="360.68" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="SDA1"/>
+<label x="353.06" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM9" class="0">
@@ -15779,36 +15783,43 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <segment>
 <wire x1="365.76" y1="-50.8" x2="360.68" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="SCL1"/>
+<label x="353.06" y="-50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA_OUT" class="0">
 <segment>
 <wire x1="386.08" y1="12.7" x2="381" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="SDA"/>
+<label x="375.92" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="398.78" y1="-48.26" x2="391.16" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="SDA2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<label x="391.16" y="-48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SDA"/>
 <wire x1="393.7" y1="-81.28" x2="401.32" y2="-81.28" width="0.1524" layer="91"/>
+<label x="401.32" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_OUT" class="0">
 <segment>
 <wire x1="386.08" y1="22.86" x2="381" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="SCL"/>
+<label x="373.38" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SCL2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="391.16" y1="-50.8" x2="406.4" y2="-50.8" width="0.1524" layer="91"/>
+<label x="414.02" y="-50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SCL"/>
 <wire x1="393.7" y1="-76.2" x2="401.32" y2="-76.2" width="0.1524" layer="91"/>
+<label x="401.32" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -15857,13 +15868,6 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="P+18" gate="+12V" pin="+12V"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="449.58" y1="48.26" x2="459.74" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RDBK1" class="0">
 <segment>
 <wire x1="441.96" y1="17.78" x2="441.96" y2="7.62" width="0.1524" layer="91"/>
@@ -15872,10 +15876,12 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="441.96" y1="7.62" x2="441.96" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="441.96" y="7.62"/>
 <pinref part="IC2" gate="A" pin="-IN"/>
+<label x="436.88" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="AIN0"/>
 <wire x1="358.14" y1="-91.44" x2="347.98" y2="-91.44" width="0.1524" layer="91"/>
+<label x="337.82" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15887,6 +15893,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="444.5" y1="-68.58" x2="444.5" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="441.96" y1="-83.82" x2="441.96" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="444.5" y="-83.82"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -15925,6 +15932,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <junction x="462.28" y="20.32"/>
 <pinref part="IC4" gate="G$1" pin="ADJ"/>
 <wire x1="487.68" y1="20.32" x2="474.98" y2="20.32" width="0.1524" layer="91"/>
+<junction x="474.98" y="20.32"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -15944,10 +15952,12 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <wire x1="441.96" y1="-25.4" x2="441.96" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="441.96" y="-25.4"/>
 <pinref part="IC2" gate="B" pin="-IN"/>
+<label x="434.34" y="-22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="AIN1"/>
 <wire x1="358.14" y1="-96.52" x2="347.98" y2="-96.52" width="0.1524" layer="91"/>
+<label x="335.28" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -15959,6 +15969,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <junction x="462.28" y="-12.7"/>
 <pinref part="IC5" gate="G$1" pin="ADJ"/>
 <wire x1="487.68" y1="-12.7" x2="474.98" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="474.98" y="-12.7"/>
 </segment>
 </net>
 <net name="-5V" class="0">
@@ -15991,6 +16002,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="469.9" y1="-68.58" x2="457.2" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="B" pin="-IN"/>
+<junction x="469.9" y="-68.58"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -16003,6 +16015,7 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <junction x="462.28" y="-48.26"/>
 <pinref part="IC6" gate="G$1" pin="ADJ"/>
 <wire x1="487.68" y1="-48.26" x2="474.98" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="474.98" y="-48.26"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -16087,10 +16100,12 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <junction x="441.96" y="-68.58"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="441.96" y1="-68.58" x2="441.96" y2="-63.5" width="0.1524" layer="91"/>
+<label x="426.72" y="-60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="AIN2"/>
 <wire x1="393.7" y1="-96.52" x2="401.32" y2="-96.52" width="0.1524" layer="91"/>
+<label x="408.94" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RDBK4" class="0">
@@ -16100,10 +16115,16 @@ NOT BOTH Could use a DAC for voltage readback.</text>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="469.9" y1="48.26" x2="459.74" y2="48.26" width="0.1524" layer="91"/>
 <junction x="469.9" y="48.26"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="449.58" y1="48.26" x2="459.74" y2="48.26" width="0.1524" layer="91"/>
+<junction x="459.74" y="48.26"/>
+<label x="482.6" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="AIN3"/>
 <wire x1="393.7" y1="-91.44" x2="401.32" y2="-91.44" width="0.1524" layer="91"/>
+<label x="408.94" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
