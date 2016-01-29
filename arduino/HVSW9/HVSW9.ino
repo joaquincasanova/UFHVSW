@@ -41,6 +41,7 @@ void reset()  {
 
 void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) {
 
+  reset();
   int PWMValue = 0;
   PWMValue = ((int) (D) / (DMax) * 5000); 
   int HVValue = 0;
@@ -64,8 +65,21 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
     }else{
       dac.voutWrite(PWMValue, LVValue, 0, HVValue);
     }
-    Serial.println("Stabilize");
-    delay(250);
+    Serial.println("Stabilize");  
+    delay(1000);      
+    int16_t adc0, adc1, adc2, adc3;
+
+    adc0 = ads.readADC_SingleEnded(0);
+    delay(1);
+    adc2 = ads.readADC_SingleEnded(2);
+    delay(1);
+    adc3 = ads.readADC_SingleEnded(3);
+    delay(1);
+    Serial.print("Actual HV: "); Serial.println((float)adc0*3e-3*200.);
+    Serial.print("Actual LV: "); Serial.println((float)-adc2*3e-3*200.);
+    Serial.print("Actual DUTY: "); Serial.println((float)adc3*3e-3);
+    Serial.println(" ");
+
   }
   Serial.println("Starting in 5 seconds...");  
   delay(1000);
@@ -85,12 +99,9 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
       reset();
       break;
     }    
-    double HV = DV + CV;
-    if (CVIndex % 10 == 0){
-      Serial.println("CV:");
-      Serial.println(CV);
-    }
-    double LV = -DV * D/(100 - D) + CV;
+    HV = DV + CV;
+    LV = -DV * D/(100 - D) + CV;
+    
     if (abs(HV - LV) > 1000)  {
       Serial.println("Voltage out of range");
       delay(1000);
@@ -104,20 +115,29 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
       }else{
         dac.voutWrite(PWMValue, LVValue, 0, HVValue);
       }   
-    int16_t adc0, adc1, adc2, adc3;
-
-    adc0 = ads.readADC_SingleEnded(0);
-    adc2 = ads.readADC_SingleEnded(2);
-    adc3 = ads.readADC_SingleEnded(3);
-    Serial.print("Actual HV: "); Serial.println((float) adc0/4096*1000);
-    Serial.print("Actual LV: "); Serial.println((float) adc2/4096*1000);
-    Serial.print("Actual DUTY: "); Serial.println((float) adc3/4096);
-    Serial.println(" ");
     delay(50);
+    }
+    if (CVIndex % 50 == 0){
+      Serial.print("CV: ");
+      Serial.println(CV);
+      Serial.print("HV: ");
+      Serial.println(HV);
+      Serial.print("LV :");
+      Serial.println(LV);
+      Serial.print("D :");
+      Serial.println((D)/(DMax));
+      int16_t adc0, adc1, adc2, adc3;
+      adc0 = ads.readADC_SingleEnded(0);
+      delay(1);
+      adc2 = ads.readADC_SingleEnded(2);
+      delay(1);  
+      Serial.print("Actual HV: "); Serial.println((float)adc0*3e-3*200.);
+      Serial.print("Actual LV: "); Serial.println((float)-adc2*3e-3*200.);
+      Serial.println(" ");
     }
     CV=CV+CVDelta;
     CVIndex++;
-    }
+  }
   reset();
   //cool down
   delay(60000);
