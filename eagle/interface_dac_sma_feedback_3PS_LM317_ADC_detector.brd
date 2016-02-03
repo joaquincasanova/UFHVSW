@@ -2758,28 +2758,6 @@ Based on the following sources :
 </package>
 </packages>
 </library>
-<library name="optocoupler">
-<description>&lt;b&gt;Opto Couplers&lt;/b&gt;&lt;p&gt;
-Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DIL04">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="2.54" y1="2.921" x2="-2.54" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-2.921" x2="2.54" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="2.921" x2="2.54" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="2.921" x2="-2.54" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-2.921" x2="-2.54" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="1.016" x2="-2.54" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-1.27" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
-<pad name="2" x="1.27" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
-<pad name="3" x="1.27" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
-<pad name="4" x="-1.27" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
-<text x="4.191" y="-2.921" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-2.921" y="-2.667" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-</package>
-</packages>
-</library>
 <library name="texas">
 <description>&lt;b&gt;Texas Instruments Devices&lt;/b&gt;&lt;p&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -2891,6 +2869,40 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <vertex x="2.5654" y="4.6482"/>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
+</package>
+</packages>
+</library>
+<library name="optocoupler">
+<description>&lt;b&gt;Opto Couplers&lt;/b&gt;&lt;p&gt;
+Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="2.921" x2="-10.16" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="2.921" x2="10.16" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="2.921" x2="-10.16" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-2.921" x2="-10.16" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="1.016" x2="-10.16" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="offset" rot="R270"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="offset" rot="R90"/>
+<text x="-10.541" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-7.493" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -3164,26 +3176,9 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="9.525" y="-5.207" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="9.525" y="-5.207" size="1.778" layer="27" display="off"/>
 </element>
-<element name="OK1" library="optocoupler" package="DIL04" value="PC817" x="-7.493" y="-3.175">
-<attribute name="OC_NEWARK" value="97K7059" x="-7.493" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PC817X4J000F" x="-7.493" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-7.493" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="9707727" x="-7.493" y="-3.175" size="1.778" layer="27" display="off"/>
-</element>
-<element name="OK3" library="optocoupler" package="DIL04" value="PC817" x="-16.891" y="-3.175">
-<attribute name="OC_NEWARK" value="97K7059" x="-16.891" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PC817X4J000F" x="-16.891" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-16.891" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="9707727" x="-16.891" y="-3.175" size="1.778" layer="27" display="off"/>
-</element>
-<element name="OK4" library="optocoupler" package="DIL04" value="PC817" x="-26.289" y="-3.175">
-<attribute name="OC_NEWARK" value="97K7059" x="-26.289" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="PC817X4J000F" x="-26.289" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="" x="-26.289" y="-3.175" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="9707727" x="-26.289" y="-3.175" size="1.778" layer="27" display="off"/>
-</element>
 <element name="R14" library="rcl" package="0207/12" value="100" x="-23.495" y="-13.335"/>
 <element name="R15" library="rcl" package="0207/12" value="100" x="-23.495" y="-17.653"/>
+<element name="OK1" library="optocoupler" package="DIL16" value="PS2501&quot;" x="-18.542" y="-25.781"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3222,10 +3217,10 @@ design rules under a new name.</description>
 <contactref element="IC3" pad="5"/>
 <contactref element="U$3" pad="3"/>
 <contactref element="U$3" pad="1"/>
-<contactref element="OK1" pad="3"/>
 <contactref element="DATA" pad="3"/>
-<contactref element="OK3" pad="3"/>
-<contactref element="OK4" pad="3"/>
+<contactref element="OK1" pad="15"/>
+<contactref element="OK1" pad="13"/>
+<contactref element="OK1" pad="11"/>
 <wire x1="90.043" y1="110.871" x2="104.013" y2="111.2" width="0" layer="19" extent="1-1"/>
 <wire x1="64.897" y1="107.188" x2="90.043" y2="110.871" width="0" layer="19" extent="1-1"/>
 <wire x1="56.261" y1="86.36" x2="64.897" y2="107.188" width="0" layer="19" extent="1-1"/>
@@ -3248,10 +3243,10 @@ design rules under a new name.</description>
 <wire x1="14.605" y1="69.925" x2="23.749" y2="63.246" width="0" layer="19" extent="1-1"/>
 <wire x1="70.456" y1="136.271" x2="64.897" y2="107.188" width="0" layer="19" extent="1-1"/>
 <wire x1="40.103" y1="136.017" x2="70.456" y2="136.271" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.223" y1="0.635" x2="23.749" y2="63.246" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.621" y1="0.635" x2="-6.223" y2="0.635" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.019" y1="0.635" x2="-15.621" y2="0.635" width="0" layer="19" extent="1-1"/>
-<wire x1="9.525" y1="-5.207" x2="-6.223" y2="0.635" width="0" layer="19" extent="1-1"/>
+<wire x1="9.525" y1="-5.207" x2="23.749" y2="63.246" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.732" y1="-21.971" x2="9.525" y2="-5.207" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.812" y1="-21.971" x2="-14.732" y2="-21.971" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.892" y1="-21.971" x2="-19.812" y2="-21.971" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM6">
 <contactref element="PCB1" pad="D6"/>
@@ -3261,13 +3256,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="D7">
 <contactref element="PCB1" pad="D7"/>
-<contactref element="OK4" pad="1"/>
-<wire x1="-27.559" y1="-6.985" x2="38.354" y2="22.479" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="5"/>
+<wire x1="-17.272" y1="-29.591" x2="38.354" y2="22.479" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D8">
 <contactref element="PCB1" pad="D8"/>
-<contactref element="OK3" pad="1"/>
-<wire x1="-18.161" y1="-6.985" x2="35.814" y2="22.479" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="3"/>
+<wire x1="-22.352" y1="-29.591" x2="35.814" y2="22.479" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D4">
 <contactref element="PCB1" pad="D4"/>
@@ -3382,7 +3377,7 @@ design rules under a new name.</description>
 <wire x1="14.732" y1="30.099" x2="33.274" y2="30.099" width="1.4224" layer="16"/>
 <wire x1="33.274" y1="30.099" x2="33.274" y2="22.479" width="1.4224" layer="16"/>
 <contactref element="OK1" pad="1"/>
-<wire x1="-8.763" y1="-6.985" x2="14.732" y2="30.099" width="0" layer="19" extent="16-16"/>
+<wire x1="14.732" y1="30.099" x2="-27.432" y2="-29.591" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$1" pad="SET"/>
@@ -3404,8 +3399,8 @@ design rules under a new name.</description>
 <signal name="ENSW2">
 <contactref element="CONTROLGD2" pad="1"/>
 <wire x1="14.605" y1="65.965" x2="14.605" y2="49.149" width="1.4224" layer="16"/>
-<contactref element="OK1" pad="4"/>
-<wire x1="-8.763" y1="0.635" x2="14.605" y2="49.149" width="0" layer="19" extent="16-16"/>
+<contactref element="OK1" pad="16"/>
+<wire x1="-27.432" y1="-21.971" x2="14.605" y2="49.149" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="PCB1" pad="D3"/>
@@ -3797,28 +3792,28 @@ design rules under a new name.</description>
 </signal>
 <signal name="SAMPLE">
 <contactref element="DATA" pad="4"/>
-<contactref element="OK3" pad="4"/>
-<wire x1="13.485" y1="-5.207" x2="-18.161" y2="0.635" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="14"/>
+<wire x1="13.485" y1="-5.207" x2="-22.352" y2="-21.971" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="DATA" pad="5"/>
-<contactref element="OK4" pad="4"/>
-<wire x1="17.445" y1="-5.207" x2="-27.559" y2="0.635" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$7">
-<contactref element="R18" pad="1"/>
-<contactref element="OK1" pad="2"/>
-<wire x1="-6.223" y1="-6.985" x2="17.272" y2="35.814" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="12"/>
+<wire x1="17.445" y1="-5.207" x2="-17.272" y2="-21.971" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
-<contactref element="OK3" pad="2"/>
 <contactref element="R14" pad="1"/>
-<wire x1="-15.621" y1="-6.985" x2="-29.845" y2="-13.335" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="4"/>
+<wire x1="-29.845" y1="-13.335" x2="-19.812" y2="-29.591" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
-<contactref element="OK4" pad="2"/>
 <contactref element="R15" pad="1"/>
-<wire x1="-25.019" y1="-6.985" x2="-29.845" y2="-17.653" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="6"/>
+<wire x1="-14.732" y1="-29.591" x2="-29.845" y2="-17.653" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="OK1" pad="2"/>
+<contactref element="R18" pad="1"/>
+<wire x1="17.272" y1="35.814" x2="-24.892" y2="-29.591" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

@@ -21,7 +21,7 @@ double DMin = 0;
 double CalFactor = 202.15;
 
 int i=0;
-int CVDelT=200;//time for each CV step in ms
+
 void setup()
 {
   Serial.begin(9600);  // initialize serial interface for print()
@@ -38,8 +38,7 @@ void reset()  {
   //set everything to zero
   Serial.println("RESET");
   dac.voutWrite(0, 0, 0, 0);
-  digitalWrite(ENSW1Pin, LOW);
-  delay(120000);//WAIT for things to cool down
+  digitalWrite(ENSW1Pin, LOW); 
 }
 
 void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) {
@@ -49,7 +48,7 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   PWMValue = ((int) (D) / (DMax) * 5000); 
   int HVValue = 0;
   int LVValue = 0;
-  double CVDelta=(CVStop-CVStart)/ScanTime*CVDelT;
+  double CVDelta=(CVStop-CVStart)/ScanTime*50;
   //250 ms response time of EMCO
   double CV=CVStart;
   //Get to start voltage
@@ -63,22 +62,25 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   } else { 
     HVValue = abs((int) HV / HVMax * 5000);
     LVValue = abs((int) LV / LVMax * 5000);
-    if (HV<0){
-      dac.voutWrite(PWMValue, HVValue, 0, LVValue);    
-    }else{
-      dac.voutWrite(PWMValue, LVValue, 0, HVValue);
-    }
+      if (HV<0){
+        dac.voutWrite(PWMValue,LVValue, HVValue*2,0);    
+      }else{  
+        dac.voutWrite(PWMValue, HVValue, LVValue*2,0);
+      } 
     Serial.println("Stabilize");  
     delay(1000);      
     int16_t adc0, adc1, adc2, adc3;
 
     adc0 = ads.readADC_SingleEnded(0);
     delay(1);
+    adc1 = ads.readADC_SingleEnded(1);
+    delay(1);
     adc2 = ads.readADC_SingleEnded(2);
     delay(1);
     adc3 = ads.readADC_SingleEnded(3);
     delay(1);
     Serial.print("Actual HV: "); Serial.println((float)adc0*3e-3*CalFactor);
+    Serial.print("Actual ??: "); Serial.println((float)adc1*3e-3*CalFactor/2.);
     Serial.print("Actual LV: "); Serial.println((float)-adc2*3e-3*CalFactor);
     Serial.print("Actual DUTY: "); Serial.println((float)adc3*3e-3);
     Serial.println(" ");
@@ -99,7 +101,6 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   int CVIndex = 0;
   while(CV<=CVStop){
     if (Serial.available()!=0){
-      if (Serial.read() == 'q' ||Serial.read() == 'Y')
       reset();
       break;
     }    
@@ -115,11 +116,11 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
       HVValue = abs((int) HV / HVMax * 5000);
       LVValue = abs((int) LV / LVMax * 5000);
       if (HV<0){
-        dac.voutWrite(PWMValue, HVValue, 0, LVValue);    
-      }else{
-        dac.voutWrite(PWMValue, LVValue, 0, HVValue);
+        dac.voutWrite(PWMValue,LVValue, HVValue*2,0);    
+      }else{  
+        dac.voutWrite(PWMValue, HVValue, LVValue*2,0);
       }   
-    delay(CVDelT);
+    delay(50);
     }
     if (CVIndex % 50 == 0){
       Serial.print("CV: ");
@@ -133,9 +134,14 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
       int16_t adc0, adc1, adc2, adc3;
       adc0 = ads.readADC_SingleEnded(0);
       delay(1);
+      adc1 = ads.readADC_SingleEnded(1);
+      delay(1);
       adc2 = ads.readADC_SingleEnded(2);
       delay(1);  
       Serial.print("Actual HV: "); Serial.println((float)adc0*3e-3*CalFactor);
+      
+      Serial.print("Actual ??: "); Serial.println((float)adc1*3e-3*CalFactor/2.);
+      
       Serial.print("Actual LV: "); Serial.println((float)-adc2*3e-3*CalFactor);
       Serial.println(" ");
     }
@@ -144,6 +150,7 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   }
   reset();
   //cool down
+  delay(60000);
 }
 void loop() {
 
