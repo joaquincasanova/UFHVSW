@@ -19,9 +19,9 @@ double HVMax = 1000;
 double DMax = 100;
 double DMin = 0;
 double CalFactor = 202.15;
-
 int i=0;
 int CVDelT=250;//time for each CV step in ms
+  //250 ms response time of EMCO
 void setup()
 {
   Serial.begin(9600);  // initialize serial interface for print()
@@ -44,15 +44,13 @@ void reset()  {
   delay(30000);//WAIT for things to cool down
 }
 
-void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) {
+void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
 
   reset();
   int PWMValue = 0;
   PWMValue = ((int) (D) / (DMax) * 5000); 
   int HVValue = 0;
   int LVValue = 0;
-  double CVDelta=(CVStop-CVStart)/ScanTime*CVDelT;
-  //250 ms response time of EMCO
   double CV=CVStart;
   //Get to start voltage
   double HV = DV + CV;
@@ -85,25 +83,6 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
     Serial.print("Actual HV: "); Serial.println(hvTest);
     Serial.print("Actual LV: "); Serial.println(lvTest);
     Serial.print("Actual DUTY: "); Serial.println((float)adc3*3e-3);
-    while(abs(HV-hvTest)>10 || abs(LV-lvTest)>10){   
-      adc0 = ads.readADC_SingleEnded(0);
-      delay(1);
-      adc2 = ads.readADC_SingleEnded(2);
-      delay(1);
-      adc3 = ads.readADC_SingleEnded(3);
-      delay(1); 
-      hvTest = (float)adc0*3e-3*CalFactor;
-      lvTest = (float)-adc2*3e-3*CalFactor;
-      Serial.print("Actual HV: "); Serial.println(hvTest);
-      Serial.print("Actual LV: "); Serial.println(lvTest);
-      Serial.println("Stabilize");  
-      delay(5000); 
-      if (Serial.available()!=0){
-        if (Serial.read() == 'q' ||Serial.read() == 'Y')
-        reset();
-        break;
-      }         
-    }
     Serial.println(" ");
 
   }
@@ -122,9 +101,9 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
   int CVIndex = 0;
   while(CV<=CVStop){
     if (Serial.available()!=0){
-      if (Serial.read() == 'q' ||Serial.read() == 'Y')
+      if (Serial.read() == 'q' ||Serial.read() == 'Q')
       reset();
-      break;
+      return;
     }    
     HV = DV + CV;
     LV = -DV * D/(100 - D) + CV;
@@ -142,46 +121,28 @@ void scan(double DV, double D, double CVStart, double CVStop, double ScanTime ) 
       }else{
         dac.voutWrite(PWMValue, LVValue, 0, HVValue);
       }   
-    delay(CVDelT);
+      delay(CVDelT);
     }
     if (CVIndex % 10 == 0){
-      Serial.print("CV: ");
-      Serial.println(CV);
-      Serial.print("HV: ");
-      Serial.println(HV);
-      Serial.print("LV :");
-      Serial.println(LV);
-      Serial.print("D :");
-      Serial.println((D)/(DMax));
-      int16_t adc0, adc1, adc2, adc3;
-      adc0 = ads.readADC_SingleEnded(0);
-      delay(1);
-      adc2 = ads.readADC_SingleEnded(2);
-      delay(1);  
-      float hvTest = (float)adc0*3e-3*CalFactor;
-      float lvTest = (float)-adc2*3e-3*CalFactor;
-      Serial.print("Actual HV: "); Serial.println(hvTest);
-      Serial.print("Actual LV: "); Serial.println(lvTest);
-      while(abs(HV-hvTest)>10 || abs(LV-lvTest)>10){
-        adc0 = ads.readADC_SingleEnded(0);
-        delay(1);
-        adc2 = ads.readADC_SingleEnded(2);
-        delay(1);
-        hvTest = (float)adc0*3e-3*CalFactor;
-        lvTest = (float)-adc2*3e-3*CalFactor;
-        Serial.print("Actual HV: "); Serial.println(hvTest);
-        Serial.print("Actual LV: "); Serial.println(lvTest);
-        Serial.println("Stabilize");  
-        delay(5000); 
-        if (Serial.available()!=0){
-          if (Serial.read() == 'q' ||Serial.read() == 'Y')
-          reset();
-          break;
-        }         
-      }
-      Serial.println(" ");
-    }
+    Serial.print("CV: ");
+    Serial.println(CV);
+    Serial.print("HV: ");
+    Serial.println(HV);
+    Serial.print("LV :");
+    Serial.println(LV);
+    Serial.print("D :");
+    Serial.println((D)/(DMax));
+    int16_t adc0, adc1, adc2, adc3;
+    adc0 = ads.readADC_SingleEnded(0);
+    delay(1);
+    adc2 = ads.readADC_SingleEnded(2);
+    delay(1);  
+    float hvTest = (float)adc0*3e-3*CalFactor;
+    float lvTest = (float)-adc2*3e-3*CalFactor;
+    Serial.print("Actual HV: "); Serial.println(hvTest);
+    Serial.print("Actual LV: "); Serial.println(lvTest);
     CV=CV+CVDelta;
+  }
     CVIndex++;
   }
   reset();
@@ -209,17 +170,17 @@ void loop() {
   }
   double CVStop=Serial.parseFloat();  //Read the data the user has input
   Serial.println(CVStop); 
-  Serial.println("Scan Duration?"); //Prompt User for Input
+  Serial.println("CV Delta?"); //Prompt User for Input
   while(Serial.available()==0) { // Wait for User to Input Data  
   }
-  double ScanTime=1000*Serial.parseFloat();  //Read the data the user has input
-  Serial.println(ScanTime/1000); 
+  double CVDelta=Serial.parseFloat();  //Read the data the user has input
+  Serial.println(CVDelta); 
 
   Serial.println("Confirm? (y/n)"); //Prompt User for Input
   while(Serial.available()==0) { // Wait for User to Input Data  
   }   
   if (Serial.read() == 'y' ||Serial.read() == 'Y'){
-    scan(DV, D, CVStart, CVStop, ScanTime);
+    scan(DV, D, CVStart, CVStop, CVDelta);
   } else{
     reset();
   }
