@@ -56,9 +56,9 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
   int LVValue = 0;
   double CV=CVStart;
   //Get to start voltage
-  double HV = DV + CV;
-  double LV = -DV * D/(100 - D) + CV;
-  if (abs(HV - LV) > 1000)  {
+  double HV = DV + CV + DV * D/(100 - D) + CV;
+  double LV = DV * D/(100 - D) + CV;
+  if (abs(HV) > 1000)  {
     Serial.println("Voltage out of range");
     delay(1000);
     reset();
@@ -113,10 +113,9 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
       reset();
       return;
     }    
-    HV = DV + CV;
-    LV = -DV * D/(100 - D) + CV;
-    
-    if (abs(HV - LV) > 1000)  {
+  HV = DV + CV + DV * D/(100 - D) + CV;
+  LV = DV * D/(100 - D) + CV;    
+    if (abs(HV) > 1000)  {
       Serial.println("Voltage out of range");
       delay(1000);
       reset();

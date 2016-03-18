@@ -2606,9 +2606,9 @@ by R. Vogg  15.March.2002</description>
 <wire x1="2.413" y1="-1.1359" x2="2.413" y2="1.1359" width="0.127" layer="51" curve="50.4167"/>
 <wire x1="1.1359" y1="-2.413" x2="2.413" y2="-1.1359" width="0.127" layer="21" curve="39.5833"/>
 <wire x1="1.1359" y1="2.413" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-39.5833"/>
-<pad name="1" x="0" y="-2.54" drill="0.8128" shape="long"/>
-<pad name="3" x="0" y="2.54" drill="0.8128" shape="long"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="long"/>
+<pad name="1" x="0" y="-2.54" drill="1" shape="long"/>
+<pad name="3" x="0" y="2.54" drill="1" shape="long"/>
+<pad name="2" x="2.54" y="0" drill="1" shape="long"/>
 <text x="-1.524" y="3.556" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.524" y="-4.953" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
