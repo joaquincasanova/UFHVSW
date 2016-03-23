@@ -85,7 +85,7 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     delay(1);
     float hvTest = (float)adc0*3e-3*CalFactor;
     float ctiaTest = (float)adc1*3e-3;
-    float lvTest = (float)-adc2*3e-3*CalFactor;
+    float lvTest = (float)adc2*3e-3*CalFactor;
     float dutyTest = (float)adc3*3e-3;
     Serial.print("Actual HV: "); Serial.println(hvTest);
     //Serial.print("Actual CTIA: "); Serial.println(ctiaTest);
@@ -151,7 +151,7 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     delay(1);
     float hvTest = (float)adc0*3e-3*CalFactor;
     float ctiaTest = (float)adc1*3e-3;
-    float lvTest = (float)-adc2*3e-3*CalFactor;
+    float lvTest = (float)adc2*3e-3*CalFactor;
     float dutyTest = (float)adc3*3e-3;
     Serial.print("Actual HV: "); Serial.println(hvTest);
     //Serial.print("Actual CTIA: "); Serial.println(ctiaTest);

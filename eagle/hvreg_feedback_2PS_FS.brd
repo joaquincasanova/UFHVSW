@@ -2527,7 +2527,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pad name="ALARM" x="12.192" y="24.384" drill="1.1"/>
 <pad name="+5" x="14.732" y="24.384" drill="1.1"/>
 <pad name="DISABLE" x="17.272" y="24.384" drill="1.1"/>
-<text x="24.13" y="12.7" size="1.27" layer="25">&gt;$NAME</text>
+<text x="24.13" y="12.7" size="1.27" layer="25">&gt;NAME</text>
 <text x="24.13" y="10.16" size="1.27" layer="21">EMCO_FS</text>
 </package>
 </packages>
