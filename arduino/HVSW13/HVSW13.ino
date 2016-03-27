@@ -21,7 +21,7 @@ double DMax = 100;
 double DMin = 0;
 double CalFactor = 202.15;
 int i=0;
-int CVDelT=50;//time for each CV step in ms
+int CVDelT=100;//time for each CV step in ms
   //250 ms response time of EMCO
 void setup()
 {
@@ -128,18 +128,18 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
       }else{
         dac.voutWrite(PWMValue, LVValue, 0, HVValue);
       }  
-//      adc1 = ads.readADC_SingleEnded(1);
-//      float ctiaTest = (float)adc1*3e-3;
-//      Serial.print("Actual CTIA Before: "); Serial.println(ctiaTest);
-//      digitalWrite(SAMPLEPin, HIGH);
-//      digitalWrite(RESETPin, LOW);
+      adc1 = ads.readADC_SingleEnded(1);
+      float ctiaTest = (float)adc1*3e-3;
+      Serial.print("Actual CTIA Before: "); Serial.println(ctiaTest);
+      digitalWrite(SAMPLEPin, HIGH);
+      digitalWrite(RESETPin, LOW);
       delay(CVDelT);   
-//      digitalWrite(SAMPLEPin, LOW);
-//      digitalWrite(RESETPin, HIGH);
-//      adc1 = ads.readADC_SingleEnded(1);
-//      ctiaTest = (float)adc1*3e-3;
-//      Serial.print("Actual CTIA After: "); Serial.println(ctiaTest);
-//      delay(1);
+      digitalWrite(SAMPLEPin, LOW);
+      digitalWrite(RESETPin, HIGH);
+      adc1 = ads.readADC_SingleEnded(1);
+      ctiaTest = (float)adc1*3e-3;
+      Serial.print("Actual CTIA After: "); Serial.println(ctiaTest);
+      delay(1);
     }
     if (CVIndex % 10 == 0){
       Serial.print("CV: ");
