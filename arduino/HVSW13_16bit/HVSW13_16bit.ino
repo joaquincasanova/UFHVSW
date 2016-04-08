@@ -9,7 +9,7 @@ For discussion and feedback, please go to http://arduino.cc/forum/index.php/topi
 #include <Adafruit_ADS1015.h>
 
 mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
-Adafruit_ADS1015 ads;     /* Use thi for the 12-bit version */
+Adafruit_ADS1115 ads;     /* Use thi for the 12-bit version */
 
 //enable gate driver
 int ENSW1Pin = 9;
@@ -83,9 +83,9 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     delay(1);
     adc3 = ads.readADC_SingleEnded(3);
     delay(1);
-    float hvTest = (float)adc0*3e-3*CalFactor;
-    float lvTest = (float)-adc2*3e-3*CalFactor;
-    float dutyTest = (float)adc3*3e-3;
+    float hvTest = (float)adc0*0.1875e-3*CalFactor;
+    float lvTest = (float)-adc2*0.1875e-3*CalFactor;
+    float dutyTest = (float)adc3*0.1875e-3;
     Serial.print("Actual HV: "); Serial.println(hvTest);
     Serial.print("Actual LV: "); Serial.println(lvTest);
     Serial.print("Actual DUTY: "); Serial.println(dutyTest);
@@ -145,15 +145,15 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     delay(1);
     adc3 = ads.readADC_SingleEnded(3);
     delay(1);
-    float hvTest = (float)adc0*3e-3*CalFactor;
-    float lvTest = (float)-adc2*3e-3*CalFactor;
-    float dutyTest = (float)adc3*3e-3;
+    float hvTest = (float)adc0*0.1875e-3*CalFactor;
+    float lvTest = (float)-adc2*0.1875e-3*CalFactor;
+    float dutyTest = (float)adc3*0.1875e-3;
     Serial.print("Actual HV: "); Serial.println(hvTest);
     Serial.print("Actual LV: "); Serial.println(lvTest);
     Serial.print("Actual DUTY: "); Serial.println(dutyTest);
     
     adc1 = ads.readADC_SingleEnded(1);
-    float ctiaTest = (float)adc1*3e-3;
+    float ctiaTest = (float)adc1*0.1875e-3;
     Serial.print("Actual CTIA Before: "); Serial.println(ctiaTest);
     digitalWrite(SAMPLEPin, HIGH);
     digitalWrite(RESETPin, LOW);
@@ -161,7 +161,7 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     digitalWrite(SAMPLEPin, LOW);
     digitalWrite(RESETPin, HIGH);
     adc1 = ads.readADC_SingleEnded(1);
-    ctiaTest = (float)adc1*3e-3;
+    ctiaTest = (float)adc1*0.1875e-3;
     Serial.print("Actual CTIA After: "); Serial.println(ctiaTest);
     delay(1);
     Serial.println(" ");

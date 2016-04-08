@@ -7,9 +7,10 @@ For discussion and feedback, please go to http://arduino.cc/forum/index.php/topi
 #include <Wire.h>
 #include "mcp4728.h"
 #include <Adafruit_ADS1015.h>
+#include <SoftwareSerial.h>
 
 mcp4728 dac = mcp4728(0); // instantiate mcp4728 object, Device ID = 0
-Adafruit_ADS1015 ads;     /* Use thi for the 12-bit version */
+Adafruit_ADS1115 ads;     /* Use thi for the 16-bit version */
 
 //enable gate driver
 int ENSW1Pin = 9;
@@ -21,7 +22,7 @@ double DMax = 100;
 double DMin = 0;
 double CalFactor = 202.15;
 int i=0;
-int CVDelT=500;//time for each CV step in ms
+int CVDelT=50;//time for each CV step in ms
   //250 ms response time of EMCO
 void setup()
 {
@@ -83,9 +84,9 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     delay(1);
     adc3 = ads.readADC_SingleEnded(3);
     delay(1);
-    float hvTest = (float)adc0*3e-3*CalFactor;
-    float lvTest = (float)-adc2*3e-3*CalFactor;
-    float dutyTest = (float)adc3*3e-3;
+    float hvTest = (float)adc0*0.1875e-3*CalFactor;
+    float lvTest = (float)-adc2*0.1875e-3*CalFactor;
+    float dutyTest = (float)adc3*0.1875e-3;
     Serial.print("Actual HV: "); Serial.println(hvTest);
     Serial.print("Actual LV: "); Serial.println(lvTest);
     Serial.print("Actual DUTY: "); Serial.println(dutyTest);
@@ -102,7 +103,7 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
   delay(1000);
   Serial.println("Starting in 1 seconds...");  
   delay(1000);
-  Serial.println("GO!!!");  
+  Serial.println("GO!");  
   digitalWrite(ENSW1Pin, HIGH);
   int CVIndex = 0;
   while(CV<=CVStop){
@@ -130,14 +131,16 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
       }        
     }
     
-    Serial.print("CV: ");
-    Serial.println(CV);
-    Serial.print("HV: ");
-    Serial.println(HV);
-    Serial.print("LV :");
-    Serial.println(LV);
-    Serial.print("D :");
-    Serial.println((D)/(DMax)); 
+    Serial.print(DV);
+    Serial.print(", ");
+    Serial.print(CV);
+    Serial.print(", ");
+    Serial.print(HV);
+    Serial.print(", ");
+    Serial.print(LV);
+    Serial.print(", ");
+    Serial.print((D)/(DMax)); 
+    Serial.print(", ");
 
     adc0 = ads.readADC_SingleEnded(0);
     delay(1);
@@ -145,26 +148,29 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     delay(1);
     adc3 = ads.readADC_SingleEnded(3);
     delay(1);
-    float hvTest = (float)adc0*3e-3*CalFactor;
-    float lvTest = (float)-adc2*3e-3*CalFactor;
-    float dutyTest = (float)adc3*3e-3;
-    Serial.print("Actual HV: "); Serial.println(hvTest);
-    Serial.print("Actual LV: "); Serial.println(lvTest);
-    Serial.print("Actual DUTY: "); Serial.println(dutyTest);
+    float hvTest = (float)adc0*0.1875e-3*CalFactor;
+    float lvTest = (float)-adc2*0.1875e-3*CalFactor;
+    float dutyTest = (float)adc3*0.1875e-3;
+    Serial.print(hvTest);
+    Serial.print(", ");
+    Serial.print(lvTest);
+    Serial.print(", ");
+    Serial.print(dutyTest);
+    Serial.print(", ");
     
     adc1 = ads.readADC_SingleEnded(1);
-    float ctiaTest = (float)adc1*3e-3;
-    Serial.print("Actual CTIA Before: "); Serial.println(ctiaTest);
+    float ctiaTest = (float)adc1*0.1875e-3;
+    Serial.print(ctiaTest);
+    Serial.print(", ");
     digitalWrite(SAMPLEPin, HIGH);
     digitalWrite(RESETPin, LOW);
     delay(CVDelT);   
     digitalWrite(SAMPLEPin, LOW);
     digitalWrite(RESETPin, HIGH);
     adc1 = ads.readADC_SingleEnded(1);
-    ctiaTest = (float)adc1*3e-3;
-    Serial.print("Actual CTIA After: "); Serial.println(ctiaTest);
+    ctiaTest = (float)adc1*0.1875e-3;
+    Serial.println(ctiaTest);
     delay(1);
-    Serial.println(" ");
     
     CV=CV+CVDelta;
     CVIndex++;
