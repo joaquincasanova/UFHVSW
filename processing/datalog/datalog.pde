@@ -8,7 +8,7 @@ int readingCounter = 0; //counts each reading to compare to numReadings.
 String fileName;
 void setup()
 {
-  String portName = Serial.list()[1]; 
+  String portName = Serial.list()[31]; 
   //CAUTION: your Arduino port number is probably different! Mine happened to be 1. Use a "handshake" sketch to figure out and test which port number your Arduino is talking on. A "handshake" establishes that Arduino and Processing are listening/talking on the same port.
   //Here's a link to a basic handshake tutorial: https://processing.org/tutorials/overview/
   

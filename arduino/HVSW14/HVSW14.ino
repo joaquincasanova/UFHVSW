@@ -22,7 +22,7 @@ double DMax = 100;
 double DMin = 0;
 double CalFactor = 202.15;
 int i=0;
-int CVDelT=50;//time for each CV step in ms
+int CVDelT=100;//time for each CV step in ms
   //250 ms response time of EMCO
 void setup()
 {
@@ -162,11 +162,21 @@ void scan(double DV, double D, double CVStart, double CVStop, double CVDelta ) {
     float ctiaTest = (float)adc1*0.1875e-3;
     Serial.print(ctiaTest);
     Serial.print(", ");
-    digitalWrite(SAMPLEPin, HIGH);
-    digitalWrite(RESETPin, LOW);
-    delay(CVDelT);   
-    digitalWrite(SAMPLEPin, LOW);
-    digitalWrite(RESETPin, HIGH);
+    digitalWrite(SAMPLEPin, LOW);//S1 open
+    digitalWrite(RESETPin, LOW);//S2 open
+    delayMicroseconds(20);
+    digitalWrite(RESETPin, HIGH);//S2 closed (reset)
+    delayMicroseconds(20);
+    digitalWrite(RESETPin, LOW);//S2 open (end reset)
+    delayMicroseconds(20);
+    digitalWrite(SAMPLEPin, HIGH);//S1 closed (sample begin)
+    delayMicroseconds(20);
+    digitalWrite(SAMPLEPin, LOW);//S1 open (sample end)
+    delayMicroseconds(20);
+    digitalWrite(RESETPin, HIGH);//S2 closed (reset)
+    delayMicroseconds(20);
+    digitalWrite(RESETPin, LOW);//S2 open (end reset)
+    delayMicroseconds(20);
     adc1 = ads.readADC_SingleEnded(1);
     ctiaTest = (float)adc1*0.1875e-3;
     Serial.println(ctiaTest);
